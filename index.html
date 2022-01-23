@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Портфоліо</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="nav">
+            <div class="conteiner">
+                <div class="linkbox">
+                    <a href="index.html" class="link">Головна</a>
+                    <a href="#my_project" class="link">Мої проекти</a>
+                    <a href="#skills" class="link">Мої навички</a>
+                    <a href="#form" class="link">Контактна форма</a>
+                </div>
+            </div>
+        </div>
+        <div class="about-me">
+            <div class="inf">
+                <h1 class="title-inf">Привіт, мене звати Влад!</h1>
+                <h2 class="who-inf">Я Веб-розробник початківець</h2>
+                <p class="text-inf">На цьому сайті ви зможете побачити мої навички і розвиток в веб-розробці</p>
+                <div class="social">
+                    <a href="https://www.instagram.com/invites/contact/?i=1c6jvx7mgjbx2&utm_content=4894my8"class="social-link"><img src="img/instagram.png" width="25px"></a>
+                    <a href="https://discord.com/channels/@me" class="social-link"><img src="img/discord.png" width="25px"></a>
+                    <a href="https://t.me/vladnakornieiev" class="social-link"><img src="img/telegram.png" width="25px"></a>
+                </div>
+            </div>
+            <img src="img/me.jpg" class="me" width="400px">
+        </div>
+    </div>
+    <!-- Portfolio -->
+    <main class="portfolio">
+        <div class="conteiner" id="my_project">
+            <h2 class="title-portf">Мої Проекти</h2>
+            <div class="project-box">
+                <div class="project">
+                    <a href="diamond/project1.html"><img src="img/firstsite.png" class="project-img" width="470px"height="270px"></a>
+                    <div class="project-text">Цей сайт присвячений Чернечому Діаманту</div>
+                </div>
+                <div class="project m">
+                    <a href="shues/project2.html"><img src="img/project-shues.jpg" class="project-img" width="470px" height="270px"></a>
+                    <div class="project-text">Це сайт по продажу взуття</div>
+                </div>
+                <div class="project">
+                    <a href="new_year/project3.html"><img src="img/new_year.png" class="project-img" width="470px" height="270px"></a>
+                    <div class="project-text">Це сайт присвячений Новому Року!</div>
+                </div>
+                <div class="project m">
+                    <a href="about-project4.html"><img src="img/project-shues.jpg" class="project-img" width="470px" height="270px"></a>
+                    <p class="project-text">Опис</p>
+                </div>
+            </div>
+        </div>
+        <!-- Skill -->
+        <div class="skill" id="skills">
+            <div class="skills-box">
+                <div class="conteiner">
+                    <div class="skills">
+                        <h1 class="title-skills">Hard Skills</h1>
+                        <ol class="list-skills">
+                            <li class="item">Навичка профисійного користування ОС Windows і Linux</li>
+                            <li class="item">Навичка швидкої верстки в програмі Sublime text і Microsoft Visual Studio
+                                Code</li>
+                            <li class="item">Навички використання плагіну Emmet</li>
+                            <li class="item">Навички блокової верстки макетів різного рівня складності(одноколонковий,
+                                двохколонковий, трьохколонкови)</li>
+                            <li class="item">Навички верстки односторінкових сайтів</li>
+                        </ol>
+                    </div>
+                    <div class="line"></div>
+                    <div class="skills skills2">
+                        <h1 class="title-skills">Soft Skills</h1>
+                        <ol class="list-skills">
+                            <li class="item">Розвинена навичка вербальної комунікації</li>
+                            <li class="item">Розвинена навичка комунікації у віртуальному просторі(соц. мережі,
+                                месенджери тощо.)</li>
+                            <li class="item">Працюю над розвитком навички time managment</li>
+                            <li class="item">Відповідальність та порядочність</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="conteiner">
+                <div class="benefits">
+                    <h1 class="title-benefits">Переваги роботи зі мною</h1>
+                    <ol class="list-benefits">
+                        <li class="item">Вкладаюсь в наданий час</li>
+                        <li class="item">Постійно поновлюю свої знання</li>
+                        <li class="item">Завжди відповідаю на ваші питання</li>
+                        <li class="item">Відповідаю за свою роботу</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="conteiner" id="form">
+            <form method="post" class="form">
+                <h2 class="title-form">Форма контакту зі мною</h2><br>
+                <input type="text" name="user-name" placeholder="Введіть ім'я"><br>
+                <input type="text" name="user-email" placeholder="Введіть е-мейл"><br>
+                <label for="user-massage-id">Введіть повідомлення</label><br>
+                <input type="text" name="user-message" id="user-massage-id"><br>
+                <input type="submit" name="button" value="Відправити">
+            </form>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/invites/contact/?i=reorke4tlzj1&utm_content=4894my8" class="footer-link"><img src="img/instagram.png" width="25px"></a><br>
+                <a href="https://discord.com/channels/@me" class="footer-link"><img src="img/discord.png" width="25px"></a><br>
+                <a href="https://t.me/vladnakornieiev" class="footer-link"><img src="img/telegram.png" width="25px"></a><br>
+                <a href="https://instagram.com/if_kompschool?utm_medium=copy_link"><img src="img/ШКМ.PNG"class="social-img" width="50px" height="50px"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
