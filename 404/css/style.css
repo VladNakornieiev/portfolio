@@ -1,0 +1,12 @@
+.box {
+    height: 400px;
+    width: 100%;
+    text-align: center;
+}
+.title {
+    margin-top: 200px;
+    font-size: 80px;
+}
+.text {
+    font-size: medium;
+}
