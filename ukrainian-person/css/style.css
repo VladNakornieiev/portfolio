@@ -3,6 +3,9 @@
     margin: 0;
     font-family: 'Work Sans', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 .conteiner {
     width: 1090px;
     margin: 0 auto;
