@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+.conteiner {
+    width: 1090px;
+    margin: 0 auto;
+}
+/* Nav */
+.nav {
+    width: 100%;
+    height: 67px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.title {
+    font-size: xx-large;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+}
+.title-header {
+    font-family: 'Anton', sans-serif;
+}
+.link {
+    text-decoration: none;
+    color: black;
+}
+.nav-imgs {
+    width: 73px;
+    display: flex;
+    justify-content: space-between;
+}
+/* Header */
+.header {
+    padding: 50px 0;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, rgba(39, 177, 255, 0.74) 0%, rgba(253, 197, 0, 0.54) 100%);
+    width: 100%;
+    height: 617px;
+}
+.header-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header-texts {
+    height: 300px;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header-button {
+    color: white;
+    margin-top: 100px;
+    font-size: 15px;
+    border: 0;
+    width: 219px;
+    height: 64px;
+    background-color: black;
+}
+/* Main */
+.main-header {
+    margin-top: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-title {
+    color: #27B1FF;
+}
+.main-link {
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+}
+.main-description img {
+    object-fit: cover;
+}
+.main-box {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+/* Fact */
+.fact-box {
+    margin-top: 60px;
+    display: flex;
+}
+.fact-description {
+    margin-top: 40px;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #27B1FFBD;
+    width: 400px;
+    height: 300px;
+}
+.fact-button {
+    background-color: #FDC500;
+    border: 0;
+    width: 200px;
+    height: 60px;
+}
+.fact-text {
+    color: #727A82;
+}
+/* Footer */
+.footer {
+    margin-top: 130px;
+    background-color: #FDC500;
+    height: 222px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-links {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-social {
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+}
