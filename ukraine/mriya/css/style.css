@@ -1,0 +1,112 @@
+.img{
+	width: 540px;
+	height: 285px;
+}
+.flex2, .flex1{
+	display: flex;
+	justify-content: space-between;
+}
+main p{
+	width: 540px;
+}
+main{
+	width: 1111px;
+	border-top: 1px solid black;
+}
+button{
+	padding: 10px 50px;
+	background: gold;
+	color: white;
+	border: none;
+}
+* {
+    font-family: Raleway, sans-serif;
+}
+.conteiner {
+    width: 1111px;
+    margin: 0 auto;
+}
+.header {
+    padding-left: 10px;
+    display: flex;
+    box-shadow: inset 5em 1em gold;
+    margin-bottom:25px;
+}
+.header-content {
+    width: 600px;
+}
+.tolmachov {
+    display: flex;
+}
+.footer-title {
+    border-bottom: 10px solid red;
+}
+.content {
+    margin: 10px;
+}
+.footer-button {
+    padding: 10px 50px;
+    border: 0;
+    background-color: gold;
+}
+.footer-img {
+    margin-top: 20px;
+}
+.fact-title {
+    text-align: center;
+    margin-top: 30px;
+} 
+.facts {
+    padding-left: 10px;
+    width: 800px;
+    height: 450px;
+    border-left: 2px solid black;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.fact {
+    display: flex;
+    align-items: center;
+}
+.fact-img {
+    width: 150px;
+    height: 150px;
+    background-color: purple;
+    border-radius: 100%;
+}
+.fact-text {
+    width: 200px;
+    margin-left: 10px;
+}
+table {
+    margin-top: 30px;
+}
+td{
+    border: 1px solid black;
+    padding: 20px 10px;
+}
+.video {
+    margin-top: 20px;
+}
+button:hover{
+	background: rgb(214, 165, 5);
+}
+.top{
+	position: fixed;
+	right: 40px;
+	bottom: 40px;
+	background: white;
+	border: 1px solid black;
+}
+a img{
+	width: 100px;
+	height: 100px;
+}
+.title-world{
+  text-align:center;
+  }
+.top:hover{
+	background: white; 
+}

@@ -1,0 +1,58 @@
+.dark-theme {
+    background-color: #261C2C;
+    color: white;
+}
+
+/* Header */
+.dark-theme .link {
+    color: white;
+}
+.dark-theme .nav-box a {
+    filter: invert(100%);
+}
+.dark-theme .nav-box a:hover {
+    filter: invert(100%);
+}
+.dark-theme .header-button {
+    background-color: #5C527F;
+}
+
+.dark-theme .header-button:hover {
+    background-color: #6E85B2;
+}
+
+/* Main */
+.dark-theme .values-box {
+    background-color: #5C527F;
+}
+
+.dark-theme .quality-element {
+    background-color: #3E2C41;
+}
+
+.dark-theme .quality-yellow {
+    background-color: #6E85B2;
+}
+
+.dark-theme .quality-grey {
+    background-color: #3E2C41;
+}
+
+.dark-theme .mores-element {
+    background-color: #5C527F;
+}
+.dark-theme .mores-element img {
+    filter: invert(100%);
+}
+.dark-theme .modern-quote {
+    background-color: #3E2C41;
+}
+.dark-theme .phrase {
+    background-color: #5C527F;
+}
+.dark-theme .history-text {
+    background-color: #6E85B2;
+}
+.dark-theme .footer {
+    background-color: #5C527F;
+}

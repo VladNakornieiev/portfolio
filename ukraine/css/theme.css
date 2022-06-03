@@ -1,0 +1,106 @@
+.dark-theme * {
+    color: white;
+}
+
+.dark-theme .img {
+    filter: invert(100%);
+}
+
+/* Header */
+.dark-theme .header {
+    background-color: #261C2C;
+}
+
+.dark-theme .theme-button {
+    background-color: #261C2C;
+    background-image: url(../img/moon.png);
+}
+
+.dark-theme .button {
+    background-color: #6E85B2;
+}
+
+.dark-theme .button:hover {
+    background-color: #5C527F;
+}
+
+/* Main */
+.dark-theme .main {
+    background-color: #261C2C;
+}
+
+/* Past */
+.dark-theme .past {
+    background-color: #3E2C41;
+}
+
+.dark-theme .past-element {
+    background-color: #261C2C;
+}
+
+.dark-theme .past-element:hover {
+    background-color: #5C527F;
+}
+
+/* Cossacks */
+.dark-theme .cossacks {
+    background-color: #261C2C;
+}
+
+.dark-theme .cossacks .cossacks-element {
+    background-color: #261C2C;
+}
+
+.dark-theme .cossacks-element-big {
+    background-color: #5C527F;
+}
+
+.dark-theme .cossacks-element-big:hover {
+    background-color: #6E85B2;
+}
+
+/* Sky */
+.dark-theme .sky {
+    background-color: #6E85B2;
+}
+
+.dark-theme .sky .sky-button {
+    background-color: #6E85B2;
+}
+
+.dark-theme .sky .sky-button:hover {
+    background-color: #5C527F;
+}
+
+/* Quote */
+.dark-theme .quote {
+    background-color: #5C527F;
+}
+
+/* Digitalization */
+.dark-theme .digitalization-element {
+    background-color: #6E85B2;
+}
+
+/* Future */
+.dark-theme .future {
+    background-color: #3E2C41;
+}
+
+.dark-theme .future-element {
+    background-color: #261C2C;
+}
+
+.dark-theme .blue {
+    background-color: #5C527F;
+}
+
+/* About */
+.dark-theme .about .about-element {
+    background-color: #261C2C;
+}
+
+/* Footer */
+.dark-theme .footer {
+    background-color: #5C527F;
+}
