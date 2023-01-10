@@ -1,0 +1,287 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .conteiner {
+        width: 880px;
+    }
+
+    // Main
+    .main {
+        height: 1450px;
+    }
+
+    img[alt="light"] {
+        height: 100px;
+    }
+
+    .tree_box {
+        width: 880px;
+        height: 1300px;
+
+        picture {
+            left: 5%;
+        }
+    }
+
+    img[alt="tree"] {
+        width: 880px;
+        left: 9%;
+        top: 0;
+    }
+
+    img[alt="front-snow"] {
+        bottom: -46px;
+    }
+
+    img[alt="back-snow"] {
+        left: 100px;
+        bottom: -46px;
+    }
+
+    .wish {
+        p {
+            font-size: small;
+            padding: 10px;
+        }
+    }
+
+    .wish:nth-child(3) {
+        width: 300px;
+        height: 260px;
+        $span-color: #6930C3;
+        top: 30%;
+        left: 35%;
+
+        label span {
+            background-color: $span-color;
+            box-shadow: 0 0 10px $span-color;
+        }
+
+        p {
+            height: 160px;
+        }
+    }
+
+    .wish:nth-child(4) {
+        width: 350px;
+        height: 350px;
+        $span-color: #2552AC;
+        top: 40%;
+        left: 47%;
+
+        label span {
+            background-color: $span-color;
+            box-shadow: 0 0 10px $span-color;
+        }
+
+        p {
+            height: 250px;
+        }
+    }
+
+    .wish:nth-child(5) {
+        width: 400px;
+        height: 350px;
+        $span-color: #F57328;
+        top: 48%;
+        left: 20%;
+
+        label span {
+            background-color: $span-color;
+            box-shadow: 0 0 10px $span-color;
+        }
+
+        p {
+            height: 250px;
+        }
+    }
+
+    .wish:nth-child(6) {
+        width: 400px;
+        height: 200px;
+        $span-color: #F25287;
+        top: 65%;
+        left: 50%;
+
+        label span {
+            background-color: $span-color;
+            box-shadow: 0 0 10px $span-color;
+        }
+
+        p {
+            height: 100px;
+        }
+    }
+
+    .wish:nth-child(7) {
+        width: 400px;
+        height: 170px;
+        $span-color: #21BF73;
+        top: 75%;
+        left: 20%;
+
+        label span {
+            background-color: $span-color;
+            box-shadow: 0 0 10px $span-color;
+        }
+
+        p {
+            height: 70px;
+        }
+    }
+
+    // Footer
+    .footer {
+        img[alt="ШКМ"] {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .conteiner {
+        width: 580px;
+    }
+
+    // Nav
+    .logo {
+        font-size: 20px;
+    }
+
+    // Main
+    .main {
+        height: 950px;
+    }
+
+    img[alt="light"] {
+        height: 70px;
+    }
+
+    .tree_box {
+        width: 580px;
+        height: 900px;
+
+        picture {
+            left: 15%;
+        }
+    }
+
+    img[alt="tree"] {
+        width: 580px;
+        left: 13%;
+        top: 0;
+    }
+
+    img[alt="front-snow"] {
+        bottom: -59px;
+    }
+
+    img[alt="back-snow"] {
+        left: 100px;
+        bottom: -59px;
+    }
+
+    .wish {
+        label {
+            width: 30px;
+            height: 30px;
+        }
+
+        p {
+            font-size: x-small;
+            padding: 10px;
+        }
+    }
+
+    .wish:nth-child(3) {
+        width: 250px;
+        height: 180px;
+        $span-color: #6930C3;
+        top: 25%;
+        left: 35%;
+
+        label span {
+            background-color: $span-color;
+            box-shadow: 0 0 10px $span-color;
+        }
+
+        p {
+            height: 110px;
+        }
+    }
+
+    .wish:nth-child(4) {
+        width: 350px;
+        height: 230px;
+        $span-color: #2552AC;
+        top: 40%;
+        left: 47%;
+
+        label span {
+            background-color: $span-color;
+            box-shadow: 0 0 10px $span-color;
+        }
+
+        p {
+            height: 150px;
+        }
+    }
+
+    .wish:nth-child(5) {
+        width: 350px;
+        height: 250px;
+        $span-color: #F57328;
+        top: 45%;
+        left: 20%;
+
+        label span {
+            background-color: $span-color;
+            box-shadow: 0 0 10px $span-color;
+        }
+
+        p {
+            height: 180px;
+        }
+    }
+
+    .wish:nth-child(6) {
+        width: 350px;
+        height: 150px;
+        $span-color: #F25287;
+        top: 60%;
+        left: 50%;
+
+        label span {
+            background-color: $span-color;
+            box-shadow: 0 0 10px $span-color;
+        }
+
+        p {
+            height: 70px;
+        }
+    }
+
+    .wish:nth-child(7) {
+        width: 400px;
+        height: 160px;
+        $span-color: #21BF73;
+        top: 70%;
+        left: 15%;
+
+        label span {
+            background-color: $span-color;
+            box-shadow: 0 0 10px $span-color;
+        }
+
+        p {
+            height: 60px;
+        }
+    }
+
+    // Footer
+    .footer {
+        img[alt="ШКМ"] {
+            display: none;
+        }
+    }
+
+    @import "_burger.scss";
+}

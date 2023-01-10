@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#burger {
+    display: none;
+}
+
+.conteiner {
+    width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+// Nav
+.nav {
+    width: 100%;
+    height: 60px;
+}
+
+.nav_conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Big Shoulders Display';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    width: 373px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: #000000;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .5s;
+}
+.link:hover {
+    background-size: 100% 2px;
+}
+
+// Main
+.main {
+    height: 1950px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #BDF9F1;
+    background-image: url(../img/snow.svg);
+    background-size: cover;
+    position: relative;
+}
+img[alt="light"] {
+    height: 130px;
+}
+img[alt="tree"] {
+    width: 1180px;
+    position: absolute;
+    left: 150px;
+    z-index: 1;
+}
+
+img[alt="front-snow"],
+img[alt="back-snow"] {
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+}
+img[alt="front-snow"] {
+    z-index: 2;
+    left: 0;
+    bottom: -21px;
+}
+img[alt="back-snow"] {
+    left: 100px;
+}
+
+// Footer
+.footer {
+    width: 100%;
+    height: 200px;
+    background: #361D00;
+    color: white;
+
+    h1 {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.05em;
+    }
+
+    p,
+    li {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.05em;
+    }
+
+    .conteiner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contacts {
+        width: 250px;
+        height: 104px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 50px;
+
+        div {
+            display: flex;
+
+            img {
+                margin-right: 10px
+            }
+        }
+    }
+    .developers {
+        width: 190px;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        ul {
+            width: 100%;
+            height: 66px;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    img[alt="ШКМ"] {
+        margin: 0 265px;
+    }
+    .social {
+        width: 30px;
+        height: 110px;
+        justify-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+@import "_wish.scss";
+@import "_media.scss";

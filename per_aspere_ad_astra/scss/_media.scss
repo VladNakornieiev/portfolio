@@ -1,0 +1,138 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .conteiner {
+        width: 880px;
+    }
+
+    .main {
+        height: 2100px;
+    }
+
+    .difficulty_conteiner {
+        grid-template-columns: repeat(9, 1fr);
+    }
+
+    .difficulty_item {
+        padding: 10px;
+    }
+
+    .difficulty_item:nth-child(1) {
+        grid-row: 1;
+        grid-column: 1/6;
+    }
+
+    .difficulty_item:nth-child(2) {
+        grid-row: 1;
+        grid-column: 6/10;
+    }
+
+    .difficulty_item:nth-child(3) {
+        grid-row: 2;
+        grid-column: 1/5;
+    }
+
+    .difficulty_item:nth-child(4) {
+        grid-row: 2;
+        grid-column: 5/10;
+    }
+
+    .descr_item {
+        width: 280px;
+        height: 280px;
+    }
+
+    .descr_item:hover {
+        box-shadow: none;
+    }
+
+    .description {
+        height: 1600px;
+        grid-template-columns: repeat(3, 280px);
+        grid-template-rows: repeat(5, 280px);
+    }
+
+    .footer {
+        img[alt="ШКМ"] {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .conteiner {
+        width: 580px;
+    }
+
+    // Nav
+    .logo {
+        font-size: 20px;
+    }
+
+    // Header
+    .header-logo {
+        font-size: 20px;
+    }
+
+    .header-text {
+        font-size: 15px;
+    }
+
+    // Main
+    .main {
+        height: 5546px;
+    }
+
+    // Difficulty
+    .difficulty {
+        height: 900px;
+    }
+
+    .difficulty_conteiner {
+        height: 900px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
+
+    .difficulty_item:nth-child(1) {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .difficulty_item:nth-child(2) {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .difficulty_item:nth-child(3) {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    .difficulty_item:nth-child(4) {
+        grid-row: 4;
+        grid-column: 1;
+    }
+
+    // Description
+    .description {
+        height: 4646px;
+    }
+
+    .description_conteiner {
+        height: 4646px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(15, 280px)
+    }
+
+    .descr_item:hover {
+        box-shadow: none;
+    }
+
+    // Footer
+    .footer {
+        img[alt="ШКМ"] {
+            display: none;
+        }
+    }
+
+    @import "_burger.scss";
+}

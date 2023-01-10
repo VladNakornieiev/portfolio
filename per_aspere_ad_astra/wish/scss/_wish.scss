@@ -1,0 +1,126 @@
+.tree_box {
+    width: 1180px;
+    height: 1700px;
+    position: relative;
+    picture {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+.wish input {
+    display: none;
+}
+
+.wish {
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 1;
+
+    label {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        left: 45%;
+
+        span {
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            border-radius: 100%;
+            position: absolute;
+        }
+    }
+    p {
+        width: 100%;
+        height: 200px;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: #F5EDCE;
+        opacity: 0;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+}
+.wish:nth-child(3) {
+    $span-color: #6930C3;
+    top: 30%;
+    left: 40%;
+    label span {
+        background-color: $span-color;
+        box-shadow:0 0 10px $span-color;
+    }
+}
+.wish:nth-child(4) {
+    width: 500px;
+    height: 350px;
+    $span-color: #2552AC;
+    top: 40%;
+    left: 55%;
+    label span {
+        background-color: $span-color;
+        box-shadow:0 0 10px $span-color;
+    }
+    p {
+        height: 250px;
+    }
+}
+.wish:nth-child(5) {
+    width: 500px;
+    height: 420px;
+    $span-color: #F57328;
+    top: 50%;
+    left: 30%;
+    label span {
+        background-color: $span-color;
+        box-shadow:0 0 10px $span-color;
+    }
+    p {
+        height: 320px;
+    }
+}
+.wish:nth-child(6) {
+    width: 400px;
+    height: 250px;
+    $span-color: #F25287;
+    top: 65%;
+    left: 60%;
+    label span {
+        background-color: $span-color;
+        box-shadow:0 0 10px $span-color;
+    }
+    p {
+        height: 150px;
+    }
+}
+.wish:nth-child(7) {
+    width: 400px;
+    height: 220px;
+    $span-color: #21BF73;
+    top: 75%;
+    left: 30%;
+    label span {
+        background-color: $span-color;
+        box-shadow:0 0 10px $span-color;
+    }
+    p {
+        height: 120px;
+    }
+}
+#wish-1:checked~p,
+#wish-2:checked~p,
+#wish-3:checked~p,
+#wish-4:checked~p,
+#wish-5:checked~p {
+    opacity: 1;
+    overflow: visible;
+}

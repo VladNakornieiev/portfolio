@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#burger {
+    display: none;
+}
+
+.conteiner {
+    width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+// Nav
+.nav {
+    width: 100%;
+    height: 60px;
+}
+
+.nav_conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Big Shoulders Display';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    width: 373px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: #000000;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .5s;
+}
+
+.link:hover {
+    background-size: 100% 2px;
+}
+
+// Header
+.header {
+    width: 100%;
+    height: 694px;
+    padding: 40px 0;
+    background: url("../img/space.svg");
+    background-size: cover;
+    background-color: #000000;
+}
+
+.header-text {
+    height: 181px;
+    width: 526px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: white;
+}
+
+.header-logo {
+    font-family: 'Big Shoulders Display';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+}
+
+// Main
+.main {
+    height: 2746px;
+    width: 100%;
+}
+
+// Difficulty
+.difficulty {
+    height: 500px;
+    width: 100%;
+    padding: 15px 0;
+    background: linear-gradient(180deg, #000000 0%, #C3F8FF 100%);
+}
+
+.difficulty_conteiner {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 200px 200px;
+    grid-gap: 20px;
+}
+
+.difficulty_item {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #58287F;
+    color: white;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.difficulty_item:nth-child(1) {
+    grid-row: 1;
+    grid-column: 1/7;
+}
+
+.difficulty_item:nth-child(2) {
+    grid-row: 1;
+    grid-column: 7/13;
+}
+
+.difficulty_item:nth-child(3) {
+    grid-row: 2;
+    grid-column: 1/7;
+}
+
+.difficulty_item:nth-child(4) {
+    grid-row: 2;
+    grid-column: 7/13;
+}
+
+// Description
+.description {
+    width: 100%;
+    height: 2246px;
+    padding: 20px 0 246px 0;
+    background: linear-gradient(180deg, #C3F8FF 0%, #ABD9FF 35.49%);
+    z-index: -4;
+}
+
+.description_conteiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+.descr_item {
+    border-radius: 20px;
+    position: relative;
+}
+
+// Footer
+.footer {
+    width: 100%;
+    height: 200px;
+    background: #361D00;
+    color: white;
+
+    h1 {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.05em;
+    }
+
+    p,
+    li {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.05em;
+    }
+
+    .conteiner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contacts {
+        width: 251px;
+        height: 104px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 50px;
+
+        div {
+            display: flex;
+
+            img {
+                margin-right: 10px
+            }
+        }
+    }
+
+    .developers {
+        width: 190px;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        ul {
+            width: 100%;
+            height: 66px;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    img[alt="ШКМ"] {
+        margin: 0 265px;
+    }
+
+    .social {
+        width: 30px;
+        height: 110px;
+        justify-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@import "_media.scss";
+@import "_illustration.scss";
+@import "_animation.scss";
+@import "_photo.scss";
+@import "_scrollbar.scss";

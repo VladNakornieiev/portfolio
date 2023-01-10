@@ -1,0 +1,209 @@
+.descr_item input {
+    display: none;
+}
+
+.descr_item label {
+    width: 100%;
+    height: 100%;
+}
+
+.descr_item label div {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: black;
+}
+.descr_item:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.descr_item_text {
+    width: 1180px;
+    height: 380px;
+    padding: 20px;
+    background-color: #F5EDCE;
+    color: black;
+    position: absolute;
+    left: -1000%;
+    top: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 19px;
+    display: flex;
+    justify-content: space-between;
+
+    .descr_item_text_box {
+        max-width: 730px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 6fr;
+        grid-gap: 20px;
+    }
+
+    .img {
+        width: 340px;
+        height: 340px;
+        background-color: black;
+        border-radius: 10px;
+    }
+
+    label {
+        position: relative;
+        width: 30px;
+        height: 25px;
+
+        cursor: pointer;
+        display: block;
+    }
+
+    label>span::after,
+    label>span::before {
+        content: "";
+        background-color: #000000;
+        width: 100%;
+        height: 5px;
+        position: absolute;
+    }
+
+    label>span::before {
+        transform: rotate(-45deg);
+        bottom: 5px;
+    }
+
+    label>span::after {
+        transform: rotate(45deg);
+        bottom: 5px;
+    }
+}
+
+#descr_item_animation_1:checked~.descr_item_text,
+#descr_item_animation_4:checked~.descr_item_text,
+#descr_item_animation_7:checked~.descr_item_text,
+#descr_item_animation_10:checked~.descr_item_text,
+#descr_item_animation_13:checked~.descr_item_text {
+    left: 0;
+    top: 0;
+    opacity: 1;
+    z-index: 3;
+    overflow: visible;
+    transition: 0.3s;
+}
+
+#descr_item_animation_2:checked~.descr_item_text,
+#descr_item_animation_5:checked~.descr_item_text,
+#descr_item_animation_8:checked~.descr_item_text,
+#descr_item_animation_11:checked~.descr_item_text,
+#descr_item_animation_14:checked~.descr_item_text {
+    left: -400px;
+    top: 0;
+    opacity: 1;
+    z-index: 3;
+    overflow: visible;
+    transition: 0.3s;
+}
+
+#descr_item_animation_3:checked~.descr_item_text,
+#descr_item_animation_6:checked~.descr_item_text,
+#descr_item_animation_9:checked~.descr_item_text,
+#descr_item_animation_12:checked~.descr_item_text,
+#descr_item_animation_15:checked~.descr_item_text {
+    left: -800px;
+    top: 0;
+    opacity: 1;
+    z-index: 3;
+    overflow: visible;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    
+    .descr_item_text {
+        width: 880px;
+        height: 280px;
+
+        .descr_item_text_box {
+            max-width: 510px;
+        }
+
+        .img {
+            width: 240px;
+            height: 240px;
+        }
+    }
+
+    #descr_item_animation_1:checked~.descr_item_text,
+    #descr_item_animation_4:checked~.descr_item_text,
+    #descr_item_animation_7:checked~.descr_item_text,
+    #descr_item_animation_10:checked~.descr_item_text,
+    #descr_item_animation_13:checked~.descr_item_text {
+        left: 0;
+        top: 0;
+        opacity: 1;
+        z-index: 3;
+        overflow: visible;
+        transition: 0.3s;
+    }
+
+    #descr_item_animation_2:checked~.descr_item_text,
+    #descr_item_animation_5:checked~.descr_item_text,
+    #descr_item_animation_8:checked~.descr_item_text,
+    #descr_item_animation_11:checked~.descr_item_text,
+    #descr_item_animation_14:checked~.descr_item_text {
+        left: -300px;
+        top: 0;
+        opacity: 1;
+        z-index: 3;
+        overflow: visible;
+        transition: 0.3s;
+    }
+
+    #descr_item_animation_3:checked~.descr_item_text,
+    #descr_item_animation_6:checked~.descr_item_text,
+    #descr_item_animation_9:checked~.descr_item_text,
+    #descr_item_animation_12:checked~.descr_item_text,
+    #descr_item_animation_15:checked~.descr_item_text {
+        left: -600px;
+        top: 0;
+        opacity: 1;
+        z-index: 3;
+        overflow: visible;
+        transition: 0.3s;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .descr_item {
+        label {
+            display: none;
+        }
+    }
+    .descr_item_text {
+        width: 580px;
+        height: 280px;
+        left: 0;
+        top: 0;
+        opacity: 1;
+        z-index: 3;
+        overflow: visible;
+        transition: 0;
+        .img {
+            width: 240px;
+            height: 240px;
+        }
+        label {
+            display: none;
+        }
+        .descr_item_text_box {
+            max-width: 280px;
+            grid-gap: 10px;
+            h1 {
+                font-size: large;
+            }
+            h3 {
+                font-size: medium;
+            }
+            p {
+                font-size: small;
+            }
+        }
+    }
+}
