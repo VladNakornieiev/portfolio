@@ -860,6 +860,16 @@ img[alt=cloud2] {
   background-size: cover;
 }
 
+#photo_first {
+    background: url(../img/photo_first.jpg);
+    background-size: cover;
+}
+
+
+#photo_last {
+    background: url(../img/photo_last.jpg);
+    background-size: cover;
+}
 ::-webkit-scrollbar-track {
   border-radius: 20px;
   background-color: grey;
