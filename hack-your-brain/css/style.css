@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.986rem;
+    font-weight: 700;
+}
+
+h3 {
+    color: #fff;
+    font-size: 2.074rem;
+}
+
+h4 {
+    font-size: 1.728rem;
+}
+
+body {
+    background-color: #1E1E1E;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1180px;
+    margin: 0 auto;
+    padding: 75px 0;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text {
+    width: 61.25rem;
+    padding: 10px;
+    margin: 130px auto 50px auto;
+    border-radius: 15px;
+    opacity: 0.3;
+    background: #E0FFFF;
+    mix-blend-mode: hard-light;
+    text-align: center;
+    color: #000;
+    font-size: 19.02px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.link-box {
+    height: 492px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.links {
+    height: 436px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.links a {
+    width: 280px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+    border-radius: 15px;
+    opacity: 0.3;
+    background: #E0FFFF;
+
+    mix-blend-mode: hard-light;
+
+    text-decoration: none;
+    color: #000;
+}
+
+/* Media */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 880px;
+    }
+
+    .header {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .header h1 {
+        grid-column: 1/3;
+    }
+
+    .header img[alt="react"] {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .header img[alt="jquery"] {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    .text {
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 406px;
+    }
+
+    h1 {
+        font-size: 2.488rem;
+    }
+
+    h3 {
+        font-size: 1.728rem;
+    }
+
+    .header img[alt="react"] {
+        height: 143px;
+    }
+
+    .header img[alt="jquery"] {
+        height: 144px;
+    }
+
+    .link-box {
+        height: 1172px;
+    }
+
+    .link-box .links {
+        height: fit-content;
+    }
+
+}

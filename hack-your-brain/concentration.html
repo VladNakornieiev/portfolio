@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/planing.css">
+    <link rel="stylesheet" href="css/bg.css">
+    <title>Hack your brain</title>
+</head>
+
+<body>
+    <div class="background" style="height: 800px;">
+        <div class="noise"></div>
+        <div class="circle" style="background-color: #0057A7; width: 807px; height: 807px; top: -250px; left: -250px;">
+        </div>
+        <div class="circle" style="background-color: #949400; width: 655px; height: 655px; top: -200px; right: -200px;">
+        </div>
+        <div class="circle" style="background-color: #159300; width: 583px; height: 583px; top: 650px; left: 200px;">
+        </div>
+        <div class="circle" style="background-color: #930000; width: 385px; height: 385px; top: 800px; right: 100px;">
+        </div>
+    </div>
+    <a href="index.html" id="home"><img src="img/home.svg" alt="home"></a>
+    <div class="container">
+        <header class="header">
+            <h1>Хакни свій мозок</h1>
+            <h2>Концентрація</h2>
+            <p>Ця сторінка пропонує ритуал на перші 23 хвилини перед навчанням. Ваш особистий трекер включає дії від
+                вимикання відволікаючих факторів до створення плану занять. Все це допомагає досягти ефективної
+                концентрації.</p>
+        </header>
+        <form class="concentration-form">
+            <div class="form-tasks"></div>
+            <div class="form-box">
+                <input type="text" name="text" placeholder="Впишіть свій текс" autocomplete="off" required>
+                <input type="number" name="number" placeholder="Впишіть час" name="time" required>
+                <button type="submit">Додати</button>
+            </div>
+        </form>
+    </div>
+    <template id="task">
+        <label class="new-task">
+            <h4 class="task-title">Поїсти</h4>
+            <h4 class="task-time">12хв</h4>
+        </label>
+    </template>
+    <script src="js/concentration.js"></script>
+</body>
+
+</html>

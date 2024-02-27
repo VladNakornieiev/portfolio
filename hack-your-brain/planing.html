@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/planing.css">
+    <link rel="stylesheet" href="css/bg.css">
+    <title>Hack your brain</title>
+</head>
+
+<body>
+    <div class="background" style="height: 800px;">
+        <div class="noise"></div>
+        <div class="circle" style="background-color: #7551C1; width: 438px; height: 438px; top: 0; left: 0;">
+        </div>
+        <div class="circle"
+            style="background-color: #62E184; width: 700px; height: 700px; top: -200px; right: -200px; opacity: 0.6;">
+        </div>
+        <div class="circle" style="background-color: #BC5F41; width: 685px; height: 685px; top: 450px; left: 200px;">
+        </div>
+    </div>
+    <a href="index.html" id="home"><img src="img/home.svg" alt="home"></a>
+    <div class="container">
+        <header class="header">
+            <h1>Хакни свій мозок</h1>
+            <h2>Планування</h2>
+            <p>Ця сторінка допомагає організувати час для успішного вивчення. Створіть розклад, визначте години,
+                розподіліть час на навчання та відпочинок. Забезпечте ефективне використання часу для досягнення цілей.
+            </p>
+        </header>
+        <form>
+            <div class="form-tasks">
+            </div>
+            <div class="form-box">
+                <input type="text" name="text" placeholder="Впишіть свій текс" autocomplete="off" required>
+                <button type="submit">Додати</button>
+            </div>
+        </form>
+    </div>
+    <template id="task">
+        <label class="template-new">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <h4>Нове завдання</h4>
+        </label>
+    </template>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

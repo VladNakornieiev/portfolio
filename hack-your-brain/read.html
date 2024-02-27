@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/planing.css">
+    <link rel="stylesheet" href="css/bg.css">
+    <title>Hack your brain</title>
+</head>
+
+<body>
+    <div class="background">
+        <div class="noise"></div>
+        <div class="circle" style="background-color: #0057A7; width: 807px; height: 807px; top: -250px; left: -250px;">
+        </div>
+        <div class="circle" style="background-color: #949400; width: 655px; height: 655px; top: -200px; right: -200px;">
+        </div>
+        <div class="circle" style="background-color: #159300; width: 583px; height: 583px; top: 650px; left: 200px;">
+        </div>
+        <div class="circle" style="background-color: #930000; width: 385px; height: 385px; top: 800px; right: 100px;">
+        </div>
+    </div>
+    <a href="index.html" id="home"><img src="img/home.svg" alt="home"></a>
+    <div class="container">
+        <header class="header">
+            <h1>Хакни свій мозок</h1>
+            <h2>Пишемо та читаємо правильно</h2>
+            <p>Це новаторський веб-ресурс, спрямований на поліпшення навчального процесу та збільшення ефективності
+                вивчення інформації. Наш сайт пропонує комплексний підхід до освіти, сприяючи утриманню інформації в
+                довгостроковій пам'яті користувачів.</p>
+        </header>
+        <div class="read-text">Заведення окремого зошита для конспектів розширило мої можливості систематизації і
+            узагальнення навчального матеріалу. Вибір формату А4 дозволив зручно фіксувати інформацію в письмовій формі
+            під час перегляду відео-лекцій і читання матеріалів.<br><br>
+
+            Читання паперових книг і конспектування кожної глави стало ефективним методом освоєння нового матеріалу.
+            Детальне конспектування дозволяє краще розуміти та запам'ятовувати ключові аспекти кожного розділу.<br><br>
+
+            Підкреслення важливих думок у самій книзі і вказівка головної ідеї на кожній сторінці допомагає зручно
+            орієнтуватися в матеріалі для подальшого використання.<br><br>
+
+            Друк матеріалів і виділення головних моментів, які потрібно записати в зошит вручну, сприяє кращому
+            засвоєнню і збереженню інформації.<br><br>
+
+            Оформлення конспектів текстовими виділеннями, позначками, схемами та таблицями дозволяє зберегти інформацію
+            в легкозапам'ятовувальній формі, роблячи процес вивчення більш ефективним.<br><br>
+
+            Концентрація на матеріалі, його ретельне вивчення та читання вголос сприяє кращому розумінню та
+            запам'ятовуванню інформації.<br><br>
+
+            Регулярне ведення записів стало необхідною звичкою, що сприяє систематизації отриманого знання та покращує
+            мою підготовку.<br><br>
+
+            Задоволення від письмової роботи позитивно впливає на моє ставлення до навчання, роблячи процес більш
+            приємним та продуктивним.</div>
+        <form>
+            <div class="form-tasks"></div>
+            <div class="form-box">
+                <input type="text" name="text" placeholder="Впишіть свій текс" autocomplete="off" required>
+                <button type="submit">Додати</button>
+            </div>
+        </form>
+    </div>
+    <template id="task">
+        <label class="template-new">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <h4>Нове завдання</h4>
+        </label>
+    </template>
+    <script src="js/read.js"></script>
+</body>
+
+</html>
