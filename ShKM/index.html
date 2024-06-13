@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <title>ШКМ</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <a href="index.html"><svg width="51.5" height="50" xmlns="https://www.w3.org/2000/svg"
+                    viewBox="-5 -3 190 180">
+
+                    <defs>
+                        <radialGradient id="blue">
+                            <stop offset="0%" stop-color="#28AFE7" stop-opacity="0" />
+                            <stop offset="100%" stop-color="#28AFE7" stop-opacity="0.5" />
+                        </radialGradient>
+                        <radialGradient id="red">
+                            <stop offset="0%" stop-color="#E22124" stop-opacity="0" />
+                            <stop offset="100%" stop-color="#E22124" stop-opacity="0.5" />
+                        </radialGradient>
+                        <radialGradient id="green">
+                            <stop offset="0%" stop-color="#25AB4D" stop-opacity="0" />
+                            <stop offset="100%" stop-color="#25AB4D" stop-opacity="0.5" />
+                        </radialGradient>
+                    </defs>
+
+                    <g class="red">
+                        <circle cx="60" cy="112" r="60" fill="url(#red)" /><!-- Gradient -->
+                        <circle cx="60" cy="112" r="40" fill="transparent" stroke-width="5" stroke="#E22124"
+                            class="middle" /><!-- Smtransform Circle -->
+                        <circle cx="60" cy="112" r="60" fill="transparent" stroke-width="5" stroke="#E22124" />
+                        <!-- Big Circle -->
+                    </g>
+                    <g class="green">
+                        <circle cx="120" cy="112" r="60" fill="url(#green)" /><!-- Gradient -->
+                        <circle cx="120" cy="112" r="40" fill="transparent" stroke-width="5" stroke="#25AB4D"
+                            class="middle" /><!-- Smtransform Circle -->
+                        <circle cx="120" cy="112" r="60" fill="transparent" stroke-width="5" stroke="#25AB4D"
+                            id="greenBigCircle" /><!-- Big Circle -->
+                    </g>
+                    <g class="blue">
+                        <circle cx="90" cy="60" r="60" fill="url(#blue)" /><!-- Gradient -->
+                        <circle cx="90" cy="60" r="40" fill="transparent" stroke-width="5" stroke="#28AFE7"
+                            class="middle" /><!-- Smtransform Circle -->
+                        <circle cx="90" cy="60" r="60" fill="transparent" stroke-width="5" stroke="#28AFE7" />
+                        <!-- Big Circle -->
+                    </g>
+
+                    <g class="red-circles">
+                        <circle r="12" fill="none" />
+                        <circle r="10" fill="none" />
+                        <circle r="8" fill="none" />
+                        <circle r="6" fill="none" />
+                        <circle r="4" fill="none" />
+                    </g>
+                    <g class="blue-circles">
+                        <circle r="12" fill="none" />
+                        <circle r="10" fill="none" />
+                        <circle r="8" fill="none" />
+                        <circle r="6" fill="none" />
+                        <circle r="4" fill="none" />
+                    </g>
+                    <g class="green-circles">
+                        <circle r="12" fill="none" />
+                        <circle r="10" fill="none" />
+                        <circle r="8" fill="none" />
+                        <circle r="6" fill="none" />
+                        <circle r="4" fill="none" />
+                    </g>
+
+                    <g class="center-circles">
+                        <circle cx="60" cy="112" r="16" fill="#330066" />Center Red
+                        <circle cx="120" cy="112" r="16" fill="#330066" />Center Green
+                        <circle cx="90" cy="60" r="16" fill="#330066" />Center Blue
+                        <circle cx="60" cy="112" r="60" fill="transparent" stroke="#330066" class="center-line-red" />
+                        Center
+                        Line
+                        <circle cx="90" cy="60" r="60" fill="transparent" stroke="#330066" class="center-line-blue" />
+                        Center
+                        Line
+                        <circle cx="120" cy="112" r="60" fill="transparent" stroke="#330066"
+                            class="center-line-green" />
+                        Center Line
+                    </g>
+                </svg></a>
+            <div class="links">
+                <a href="#about-school" data-language-text="linkNav1">Про школу</a>
+                <a href="#school-program" data-language-text="linkNav2">Навчальна програма</a>
+                <a href="#" data-language-text="linkNav3">Наш колектив</a>
+                <a href="#galery" data-language-text="linkNav4">Галерея</a>
+                <a href="#" data-language-text="linkNav5">Відгуки</a>
+                <a href="#" data-language-text="linkNav6">Контакти</a>
+            </div>
+            <div id="language">
+                <div class="language-box">
+                    <img src="img/flagUkraine.svg" alt="UA" width="26" class="language-image">
+                    <div class="language-label">UA</div>
+                    <img src="img/rectangle.svg" alt="rectangle" class="language-indicator">
+                </div>
+                <section class="language-option" data-language-option="UA, img/flagUkraine.svg"
+                    style="--language-item-number: 1;">
+                    <img src="img/flagUkraine.svg" alt="UA" width="26">
+                    <div class="label">UA</div>
+                </section>
+                <section class="language-option" data-language-option="EN, img/flagUK.svg"
+                    style="--language-item-number: 2;">
+                    <img src="img/flagUK.svg" alt="UK" width="26">
+                    <div class="label">EN</div>
+                </section>
+            </div>
+            <div class="burger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="container">
+            <h1 data-language-text="HeaderTitle">Школа Комп’ютерної Майстерності</h1>
+            <svg width="308" height="308" xmlns="https://www.w3.org/2000/svg" viewBox="-5 -3 190 180">
+
+                <defs>
+                    <radialGradient id="blue">
+                        <stop offset="0%" stop-color="#28AFE7" stop-opacity="0" />
+                        <stop offset="100%" stop-color="#28AFE7" stop-opacity="0.5" />
+                    </radialGradient>
+                    <radialGradient id="red">
+                        <stop offset="0%" stop-color="#E22124" stop-opacity="0" />
+                        <stop offset="100%" stop-color="#E22124" stop-opacity="0.5" />
+                    </radialGradient>
+                    <radialGradient id="green">
+                        <stop offset="0%" stop-color="#25AB4D" stop-opacity="0" />
+                        <stop offset="100%" stop-color="#25AB4D" stop-opacity="0.5" />
+                    </radialGradient>
+                </defs>
+
+                <g class="red">
+                    <circle cx="60" cy="112" r="60" fill="url(#red)" /><!-- Gradient -->
+                    <circle cx="60" cy="112" r="40" fill="transparent" stroke-width="5" stroke="#E22124"
+                        class="middle" /><!-- Smtransform Circle -->
+                    <circle cx="60" cy="112" r="60" fill="transparent" stroke-width="5" stroke="#E22124" />
+                    <!-- Big Circle -->
+                </g>
+                <g class="green">
+                    <circle cx="120" cy="112" r="60" fill="url(#green)" /><!-- Gradient -->
+                    <circle cx="120" cy="112" r="40" fill="transparent" stroke-width="5" stroke="#25AB4D"
+                        class="middle" /><!-- Smtransform Circle -->
+                    <circle cx="120" cy="112" r="60" fill="transparent" stroke-width="5" stroke="#25AB4D"
+                        id="greenBigCircle" /><!-- Big Circle -->
+                </g>
+                <g class="blue">
+                    <circle cx="90" cy="60" r="60" fill="url(#blue)" /><!-- Gradient -->
+                    <circle cx="90" cy="60" r="40" fill="transparent" stroke-width="5" stroke="#28AFE7"
+                        class="middle" /><!-- Smtransform Circle -->
+                    <circle cx="90" cy="60" r="60" fill="transparent" stroke-width="5" stroke="#28AFE7" />
+                    <!-- Big Circle -->
+                </g>
+
+                <g class="red-circles">
+                    <circle r="12" fill="none" />
+                    <circle r="10" fill="none" />
+                    <circle r="8" fill="none" />
+                    <circle r="6" fill="none" />
+                    <circle r="4" fill="none" />
+                </g>
+                <g class="blue-circles">
+                    <circle r="12" fill="none" />
+                    <circle r="10" fill="none" />
+                    <circle r="8" fill="none" />
+                    <circle r="6" fill="none" />
+                    <circle r="4" fill="none" />
+                </g>
+                <g class="green-circles">
+                    <circle r="12" fill="none" />
+                    <circle r="10" fill="none" />
+                    <circle r="8" fill="none" />
+                    <circle r="6" fill="none" />
+                    <circle r="4" fill="none" />
+                </g>
+
+                <g class="center-circles">
+                    <circle cx="60" cy="112" r="16" fill="#330066" />Center Red
+                    <circle cx="120" cy="112" r="16" fill="#330066" />Center Green
+                    <circle cx="90" cy="60" r="16" fill="#330066" />Center Blue
+                    <circle cx="60" cy="112" r="60" fill="transparent" stroke="#330066" class="center-line-red" />Center
+                    Line
+                    <circle cx="90" cy="60" r="60" fill="transparent" stroke="#330066" class="center-line-blue" />Center
+                    Line
+                    <circle cx="120" cy="112" r="60" fill="transparent" stroke="#330066" class="center-line-green" />
+                    Center Line
+                </g>
+            </svg>
+            <h5 data-language-text="HeaderSubtitle">робимо успішних у світі, що
+                змінюється</h5>
+            <a href="#" class="inscribe" data-language-text="signUp">Записатися на урок</a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="description">
+            <div class="container">
+                <section class="galery" id="galery">
+                    <div class="galery-img" style="background-image: url(./img/photo1.png);">
+                        <p data-language-text="galery1">
+                            Поле наших знань лежить в сфері сайтобудування, а саме FRONT-END розробки, яка на даний
+                            момент розвивається найшвидше. </p>
+                    </div>
+                    <div class="galery-img" style="background-image: url(./img/photo2.png);">
+                        <p style="max-width: 491px;" data-language-text="galery2">Це гарантовано дає можливість нашим
+                            учням отримати престижну та
+                            високооплачувану професію.</p>
+                    </div>
+                    <div class="galery-img" style="background-image: url(./img/photo3.png);">
+                        <p style="max-width: 368px; align-self: flex-end;" data-language-text="galery3">Працюють тільки
+                            професійні викладачі, які
+                            мають вищу педагогічну освіту. </p>
+                    </div>
+                </section>
+            </div>
+            <div class="quote" id="about-school">
+                <div class="container">
+                    <h4 data-language-text="quote">“ Успіх в навчанні залежить не тільки від викладачів, а й від учнів,
+                        від їх здібностей, бажання,
+                        сумлінності та базових знань. Тому, перш ніж записатись в нашу школу, учні запрошуються на
+                        БЕЗКОШТОВНИЙ пробний урок, для того, щоб побачити та відчути на собі роботу нашого колективу. ”
+                    </h4>
+                    <div class="inscribe" data-language-text="signUp">Записатися на урок</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="statistics">
+                <h2 data-language-text="statTitle">Чому саме ми?</h2>
+                <div class="statistics-elements">
+                    <div class="statistics-el">
+                        <div>
+                            <h2 data-stat-max="22">0</h2>
+                            <p data-language-text="statElY1">рік</p>
+                        </div>
+                        <p data-language-text="statEl1">успішної роботи</p>
+                    </div>
+                    <div class="statistics-el">
+                        <h2 data-stat-max="1070">0</h2>
+                        <p data-language-text="statEl2">випускників</p>
+                    </div>
+                    <div class="statistics-el">
+                        <h2 data-stat-max="252">0</h2>
+                        <p data-language-text="statEl3">проекта виконано</p>
+                    </div>
+                    <div class="statistics-el">
+                        <h2 data-stat-max="53">0</h2>
+                        <p data-language-text="statEl4">соціальні акції проведено</p>
+                    </div>
+                </div>
+            </div>
+            <div class="school-program" id="school-program">
+                <h2 data-language-text="schoolProgramTitle">Навчальна програма</h2>
+                <p data-language-text="schoolProgramDesc">В залежності від <b>вікової категорії</b> нами розроблена
+                    унікальна програма розвитку та навчання учнів, що враховує психолого-фізіологічні характеристики
+                    учнів певного віку</p>
+                <h3 data-language-text="schoolProgramSub">Виберіть вікову категорію учня:</h3>
+                <div class="categories">
+                    <div class="categories-age">
+                        <div class="categories-bg"></div>
+                        <p data-category-i="0" data-language-text="category1" class="category-active">8-9 років</p>
+                        <p data-category-i="1" data-language-text="category2">10-11 років</p>
+                        <p data-category-i="2" data-language-text="category3">12-16 років</p>
+                        <p data-category-i="3" data-language-text="category4">від 16 років</p>
+                    </div>
+                    <div class="categories-desc">
+                        <p data-language-text="descCategory1"><b>8 років</b><br>навчання</p>
+                        <p data-language-text="descCategory2"><b>6 років</b><br>навчання</p>
+                        <p data-language-text="descCategory3"><b>4 роки</b><br>навчання</p>
+                        <p data-language-text="descCategory4">Індивідуально</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-header">
+                <h3>Допоможемо з вибором</h3>
+                <h4>Напиши нам, якщо маєш питання щодо навчання, Ми передзвонимо і залюбки поговоримо з тобою :)</h4>
+                <form action="orderCall" method="post">
+                    <input type="text" name="name" placeholder="Ім’я" autocomplete="off">
+                    <input type="tel" name="number" placeholder="Номер телефону" autocomplete="off">
+                    <button type="submit">Замовити дзвінок</button>
+                </form>
+            </div>
+            <div class="contacts">
+                <section class="footer-logo">ШКМ</section>
+                <div class="contact">
+                    <h5>м. Івано-Франківськ,<br>
+                        вул. Північний бульвар 5б</h5>
+                    <a href="tel:+380992311519"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.965 8.0925C6.045 10.215 7.785 11.9475 9.9075 13.035L11.5575 11.385C11.76 11.1825 12.06 11.115 12.3225 11.205C13.1625 11.4825 14.07 11.6325 15 11.6325C15.4125 11.6325 15.75 11.97 15.75 12.3825V15C15.75 15.4125 15.4125 15.75 15 15.75C7.9575 15.75 2.25 10.0425 2.25 3C2.25 2.5875 2.5875 2.25 3 2.25H5.625C6.0375 2.25 6.375 2.5875 6.375 3C6.375 3.9375 6.525 4.8375 6.8025 5.6775C6.885 5.94 6.825 6.2325 6.615 6.4425L4.965 8.0925Z"
+                                fill="#FBFBFB" />
+                        </svg>(099) 23 11 519</a>
+                    <a href="https://www.instagram.com/if_kompschool?igsh=bDZhYnlpeGQzZ3F6"><svg width="15" height="15"
+                            viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.9549 4.40781C14.9184 3.60947 14.7916 3.06427 14.6062 2.58728C14.418 2.08683 14.1227 1.63353 13.7411 1.25885C13.3666 0.877304 12.9132 0.581932 12.4127 0.393562C11.9356 0.208282 11.3905 0.0815964 10.5922 0.0453186C9.79237 0.00869751 9.53682 0 7.5 0C5.46318 0 5.20763 0.00869751 4.40781 0.0450897C3.60947 0.0815964 3.06438 0.208397 2.58728 0.393791C2.08683 0.582047 1.63353 0.877304 1.25885 1.25885C0.877304 1.63342 0.581932 2.08672 0.393562 2.58717C0.208282 3.06427 0.0815964 3.60947 0.0453186 4.40769C0.00869751 5.20763 0 5.46307 0 7.49989C0 9.53682 0.00869751 9.79237 0.0453186 10.5922C0.0817108 11.3904 0.208511 11.9356 0.393906 12.4127C0.582161 12.9131 0.877419 13.3665 1.25896 13.741C1.63353 14.1226 2.08694 14.4178 2.58739 14.6061C3.06438 14.7916 3.60958 14.9183 4.40792 14.9548C5.20786 14.9913 5.46329 14.9999 7.50011 14.9999C9.53693 14.9999 9.79248 14.9913 10.5923 14.9548C11.3906 14.9183 11.9357 14.7916 12.4128 14.6061C13.4203 14.2165 14.2167 13.4201 14.6062 12.4127C14.7917 11.9356 14.9184 11.3904 14.9549 10.5922C14.9913 9.79225 15 9.53682 15 7.5C15 5.46307 14.9913 5.20763 14.9549 4.40781ZM13.6049 10.5307C13.5715 11.262 13.4493 11.6591 13.3467 11.9234C13.0943 12.5775 12.5774 13.0944 11.9233 13.3468C11.659 13.4494 11.2619 13.5717 10.5306 13.605C9.73995 13.6411 9.50272 13.6487 7.5 13.6487C5.49717 13.6487 5.26005 13.6411 4.46926 13.605C3.7381 13.5717 3.34099 13.4494 3.07663 13.3468C2.75093 13.2265 2.45625 13.0348 2.21432 12.7857C1.96518 12.5438 1.77349 12.2492 1.65321 11.9234C1.55056 11.6591 1.42834 11.262 1.39503 10.5307C1.35899 9.73995 1.35132 9.50272 1.35132 7.50011C1.35132 5.4974 1.35899 5.26028 1.39503 4.46938C1.42845 3.7381 1.55056 3.34099 1.65321 3.07674C1.77349 2.75093 1.96529 2.45625 2.21432 2.21432C2.45625 1.96518 2.75093 1.77349 3.07674 1.65333C3.34099 1.55056 3.7381 1.42845 4.46938 1.39503C5.26016 1.35899 5.4974 1.35132 7.5 1.35132H7.49989C9.50249 1.35132 9.73972 1.35899 10.5306 1.39515C11.2619 1.42845 11.6589 1.55067 11.9233 1.65333C12.249 1.77361 12.5436 1.96529 12.7856 2.21432C13.0347 2.45625 13.2264 2.75093 13.3466 3.07674C13.4493 3.34099 13.5715 3.7381 13.6049 4.46938C13.6409 5.26016 13.6486 5.4974 13.6486 7.5C13.6486 9.50272 13.641 9.73984 13.6049 10.5307Z"
+                                fill="url(#paint0_linear_6622_1207)" />
+                            <path
+                                d="M7.49996 3.64844C5.37296 3.64844 3.64868 5.37283 3.64868 7.49983C3.64868 9.62683 5.37296 11.3511 7.49996 11.3511C9.62708 11.3511 11.3514 9.62683 11.3514 7.49983C11.3514 5.37283 9.62708 3.64844 7.49996 3.64844ZM7.49996 9.99979C6.11935 9.99968 5 8.88045 5.00011 7.49972C5.00011 6.1191 6.11935 4.99976 7.50008 4.99976C8.88081 4.99987 10 6.1191 10 7.49972C10 8.88045 8.88069 9.99979 7.49996 9.99979Z"
+                                fill="url(#paint1_linear_6622_1207)" />
+                            <path
+                                d="M12.4036 3.49578C12.4036 3.9928 12.0006 4.39574 11.5036 4.39574C11.0065 4.39574 10.6035 3.9928 10.6035 3.49578C10.6035 2.99865 11.0065 2.5957 11.5036 2.5957C12.0006 2.5957 12.4036 2.99865 12.4036 3.49578Z"
+                                fill="url(#paint2_linear_6622_1207)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_6622_1207" x1="1.25877" y1="13.7411" x2="13.7412"
+                                    y2="1.25865" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFD600" />
+                                    <stop offset="0.5" stop-color="#FF0100" />
+                                    <stop offset="1" stop-color="#D800B9" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_6622_1207" x1="4.77673" y1="10.2231" x2="10.2233"
+                                    y2="4.77648" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF6400" />
+                                    <stop offset="0.5" stop-color="#FF0100" />
+                                    <stop offset="1" stop-color="#FD0056" />
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_6622_1207" x1="10.8672" y1="4.13211" x2="12.1399"
+                                    y2="2.85935" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#F30072" />
+                                    <stop offset="1" stop-color="#E50097" />
+                                </linearGradient>
+                            </defs>
+                        </svg>@if_kompschool</a>
+                </div>
+                <div class="contact">
+                    <h5>м. Кривий Ріг,<br>
+                        вул. Співдружності 92а</h5>
+                    <a href="tel:+380682060734"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.965 8.0925C6.045 10.215 7.785 11.9475 9.9075 13.035L11.5575 11.385C11.76 11.1825 12.06 11.115 12.3225 11.205C13.1625 11.4825 14.07 11.6325 15 11.6325C15.4125 11.6325 15.75 11.97 15.75 12.3825V15C15.75 15.4125 15.4125 15.75 15 15.75C7.9575 15.75 2.25 10.0425 2.25 3C2.25 2.5875 2.5875 2.25 3 2.25H5.625C6.0375 2.25 6.375 2.5875 6.375 3C6.375 3.9375 6.525 4.8375 6.8025 5.6775C6.885 5.94 6.825 6.2325 6.615 6.4425L4.965 8.0925Z"
+                                fill="#FBFBFB" />
+                        </svg>(068) 20 60 734</a>
+                    <a href="https://www.instagram.com/kompschool?igsh=ZGY2dzFyb3h4bjQy"><svg width="15" height="15"
+                            viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.9549 4.40781C14.9184 3.60947 14.7916 3.06427 14.6062 2.58728C14.418 2.08683 14.1227 1.63353 13.7411 1.25885C13.3666 0.877304 12.9132 0.581932 12.4127 0.393562C11.9356 0.208282 11.3905 0.0815964 10.5922 0.0453186C9.79237 0.00869751 9.53682 0 7.5 0C5.46318 0 5.20763 0.00869751 4.40781 0.0450897C3.60947 0.0815964 3.06438 0.208397 2.58728 0.393791C2.08683 0.582047 1.63353 0.877304 1.25885 1.25885C0.877304 1.63342 0.581932 2.08672 0.393562 2.58717C0.208282 3.06427 0.0815964 3.60947 0.0453186 4.40769C0.00869751 5.20763 0 5.46307 0 7.49989C0 9.53682 0.00869751 9.79237 0.0453186 10.5922C0.0817108 11.3904 0.208511 11.9356 0.393906 12.4127C0.582161 12.9131 0.877419 13.3665 1.25896 13.741C1.63353 14.1226 2.08694 14.4178 2.58739 14.6061C3.06438 14.7916 3.60958 14.9183 4.40792 14.9548C5.20786 14.9913 5.46329 14.9999 7.50011 14.9999C9.53693 14.9999 9.79248 14.9913 10.5923 14.9548C11.3906 14.9183 11.9357 14.7916 12.4128 14.6061C13.4203 14.2165 14.2167 13.4201 14.6062 12.4127C14.7917 11.9356 14.9184 11.3904 14.9549 10.5922C14.9913 9.79225 15 9.53682 15 7.5C15 5.46307 14.9913 5.20763 14.9549 4.40781ZM13.6049 10.5307C13.5715 11.262 13.4493 11.6591 13.3467 11.9234C13.0943 12.5775 12.5774 13.0944 11.9233 13.3468C11.659 13.4494 11.2619 13.5717 10.5306 13.605C9.73995 13.6411 9.50272 13.6487 7.5 13.6487C5.49717 13.6487 5.26005 13.6411 4.46926 13.605C3.7381 13.5717 3.34099 13.4494 3.07663 13.3468C2.75093 13.2265 2.45625 13.0348 2.21432 12.7857C1.96518 12.5438 1.77349 12.2492 1.65321 11.9234C1.55056 11.6591 1.42834 11.262 1.39503 10.5307C1.35899 9.73995 1.35132 9.50272 1.35132 7.50011C1.35132 5.4974 1.35899 5.26028 1.39503 4.46938C1.42845 3.7381 1.55056 3.34099 1.65321 3.07674C1.77349 2.75093 1.96529 2.45625 2.21432 2.21432C2.45625 1.96518 2.75093 1.77349 3.07674 1.65333C3.34099 1.55056 3.7381 1.42845 4.46938 1.39503C5.26016 1.35899 5.4974 1.35132 7.5 1.35132H7.49989C9.50249 1.35132 9.73972 1.35899 10.5306 1.39515C11.2619 1.42845 11.6589 1.55067 11.9233 1.65333C12.249 1.77361 12.5436 1.96529 12.7856 2.21432C13.0347 2.45625 13.2264 2.75093 13.3466 3.07674C13.4493 3.34099 13.5715 3.7381 13.6049 4.46938C13.6409 5.26016 13.6486 5.4974 13.6486 7.5C13.6486 9.50272 13.641 9.73984 13.6049 10.5307Z"
+                                fill="url(#paint0_linear_6622_1207)" />
+                            <path
+                                d="M7.49996 3.64844C5.37296 3.64844 3.64868 5.37283 3.64868 7.49983C3.64868 9.62683 5.37296 11.3511 7.49996 11.3511C9.62708 11.3511 11.3514 9.62683 11.3514 7.49983C11.3514 5.37283 9.62708 3.64844 7.49996 3.64844ZM7.49996 9.99979C6.11935 9.99968 5 8.88045 5.00011 7.49972C5.00011 6.1191 6.11935 4.99976 7.50008 4.99976C8.88081 4.99987 10 6.1191 10 7.49972C10 8.88045 8.88069 9.99979 7.49996 9.99979Z"
+                                fill="url(#paint1_linear_6622_1207)" />
+                            <path
+                                d="M12.4036 3.49578C12.4036 3.9928 12.0006 4.39574 11.5036 4.39574C11.0065 4.39574 10.6035 3.9928 10.6035 3.49578C10.6035 2.99865 11.0065 2.5957 11.5036 2.5957C12.0006 2.5957 12.4036 2.99865 12.4036 3.49578Z"
+                                fill="url(#paint2_linear_6622_1207)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_6622_1207" x1="1.25877" y1="13.7411" x2="13.7412"
+                                    y2="1.25865" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFD600" />
+                                    <stop offset="0.5" stop-color="#FF0100" />
+                                    <stop offset="1" stop-color="#D800B9" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_6622_1207" x1="4.77673" y1="10.2231" x2="10.2233"
+                                    y2="4.77648" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF6400" />
+                                    <stop offset="0.5" stop-color="#FF0100" />
+                                    <stop offset="1" stop-color="#FD0056" />
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_6622_1207" x1="10.8672" y1="4.13211" x2="12.1399"
+                                    y2="2.85935" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#F30072" />
+                                    <stop offset="1" stop-color="#E50097" />
+                                </linearGradient>
+                            </defs>
+                        </svg>@kompschool</a>
+                </div>
+                <div class="contact">
+                    <h5>м. Запоріжжя,<br>
+                        вул. Шкільна 56</h5>
+                    <a href="tel:+380675445402"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.965 8.0925C6.045 10.215 7.785 11.9475 9.9075 13.035L11.5575 11.385C11.76 11.1825 12.06 11.115 12.3225 11.205C13.1625 11.4825 14.07 11.6325 15 11.6325C15.4125 11.6325 15.75 11.97 15.75 12.3825V15C15.75 15.4125 15.4125 15.75 15 15.75C7.9575 15.75 2.25 10.0425 2.25 3C2.25 2.5875 2.5875 2.25 3 2.25H5.625C6.0375 2.25 6.375 2.5875 6.375 3C6.375 3.9375 6.525 4.8375 6.8025 5.6775C6.885 5.94 6.825 6.2325 6.615 6.4425L4.965 8.0925Z"
+                                fill="#FBFBFB" />
+                        </svg>(067) 54 45 402</a>
+                    <a href="https://www.instagram.com/kompschool_zp?igsh=MTF1eWF5YzZrbDBkdg=="><svg width="15"
+                            height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.9549 4.40781C14.9184 3.60947 14.7916 3.06427 14.6062 2.58728C14.418 2.08683 14.1227 1.63353 13.7411 1.25885C13.3666 0.877304 12.9132 0.581932 12.4127 0.393562C11.9356 0.208282 11.3905 0.0815964 10.5922 0.0453186C9.79237 0.00869751 9.53682 0 7.5 0C5.46318 0 5.20763 0.00869751 4.40781 0.0450897C3.60947 0.0815964 3.06438 0.208397 2.58728 0.393791C2.08683 0.582047 1.63353 0.877304 1.25885 1.25885C0.877304 1.63342 0.581932 2.08672 0.393562 2.58717C0.208282 3.06427 0.0815964 3.60947 0.0453186 4.40769C0.00869751 5.20763 0 5.46307 0 7.49989C0 9.53682 0.00869751 9.79237 0.0453186 10.5922C0.0817108 11.3904 0.208511 11.9356 0.393906 12.4127C0.582161 12.9131 0.877419 13.3665 1.25896 13.741C1.63353 14.1226 2.08694 14.4178 2.58739 14.6061C3.06438 14.7916 3.60958 14.9183 4.40792 14.9548C5.20786 14.9913 5.46329 14.9999 7.50011 14.9999C9.53693 14.9999 9.79248 14.9913 10.5923 14.9548C11.3906 14.9183 11.9357 14.7916 12.4128 14.6061C13.4203 14.2165 14.2167 13.4201 14.6062 12.4127C14.7917 11.9356 14.9184 11.3904 14.9549 10.5922C14.9913 9.79225 15 9.53682 15 7.5C15 5.46307 14.9913 5.20763 14.9549 4.40781ZM13.6049 10.5307C13.5715 11.262 13.4493 11.6591 13.3467 11.9234C13.0943 12.5775 12.5774 13.0944 11.9233 13.3468C11.659 13.4494 11.2619 13.5717 10.5306 13.605C9.73995 13.6411 9.50272 13.6487 7.5 13.6487C5.49717 13.6487 5.26005 13.6411 4.46926 13.605C3.7381 13.5717 3.34099 13.4494 3.07663 13.3468C2.75093 13.2265 2.45625 13.0348 2.21432 12.7857C1.96518 12.5438 1.77349 12.2492 1.65321 11.9234C1.55056 11.6591 1.42834 11.262 1.39503 10.5307C1.35899 9.73995 1.35132 9.50272 1.35132 7.50011C1.35132 5.4974 1.35899 5.26028 1.39503 4.46938C1.42845 3.7381 1.55056 3.34099 1.65321 3.07674C1.77349 2.75093 1.96529 2.45625 2.21432 2.21432C2.45625 1.96518 2.75093 1.77349 3.07674 1.65333C3.34099 1.55056 3.7381 1.42845 4.46938 1.39503C5.26016 1.35899 5.4974 1.35132 7.5 1.35132H7.49989C9.50249 1.35132 9.73972 1.35899 10.5306 1.39515C11.2619 1.42845 11.6589 1.55067 11.9233 1.65333C12.249 1.77361 12.5436 1.96529 12.7856 2.21432C13.0347 2.45625 13.2264 2.75093 13.3466 3.07674C13.4493 3.34099 13.5715 3.7381 13.6049 4.46938C13.6409 5.26016 13.6486 5.4974 13.6486 7.5C13.6486 9.50272 13.641 9.73984 13.6049 10.5307Z"
+                                fill="url(#paint0_linear_6622_1207)" />
+                            <path
+                                d="M7.49996 3.64844C5.37296 3.64844 3.64868 5.37283 3.64868 7.49983C3.64868 9.62683 5.37296 11.3511 7.49996 11.3511C9.62708 11.3511 11.3514 9.62683 11.3514 7.49983C11.3514 5.37283 9.62708 3.64844 7.49996 3.64844ZM7.49996 9.99979C6.11935 9.99968 5 8.88045 5.00011 7.49972C5.00011 6.1191 6.11935 4.99976 7.50008 4.99976C8.88081 4.99987 10 6.1191 10 7.49972C10 8.88045 8.88069 9.99979 7.49996 9.99979Z"
+                                fill="url(#paint1_linear_6622_1207)" />
+                            <path
+                                d="M12.4036 3.49578C12.4036 3.9928 12.0006 4.39574 11.5036 4.39574C11.0065 4.39574 10.6035 3.9928 10.6035 3.49578C10.6035 2.99865 11.0065 2.5957 11.5036 2.5957C12.0006 2.5957 12.4036 2.99865 12.4036 3.49578Z"
+                                fill="url(#paint2_linear_6622_1207)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_6622_1207" x1="1.25877" y1="13.7411" x2="13.7412"
+                                    y2="1.25865" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFD600" />
+                                    <stop offset="0.5" stop-color="#FF0100" />
+                                    <stop offset="1" stop-color="#D800B9" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_6622_1207" x1="4.77673" y1="10.2231" x2="10.2233"
+                                    y2="4.77648" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF6400" />
+                                    <stop offset="0.5" stop-color="#FF0100" />
+                                    <stop offset="1" stop-color="#FD0056" />
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_6622_1207" x1="10.8672" y1="4.13211" x2="12.1399"
+                                    y2="2.85935" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#F30072" />
+                                    <stop offset="1" stop-color="#E50097" />
+                                </linearGradient>
+                            </defs>
+                        </svg>@kompschool_zp</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

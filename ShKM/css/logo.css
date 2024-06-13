@@ -1,0 +1,108 @@
+svg * {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+/* Center Lines */
+.center-line-red {
+    stroke-dasharray: 45px 332px;
+    stroke-dashoffset: 50px;
+    stroke-width: 5px;
+}
+
+.center-line-blue {
+    stroke-dasharray: 45px 332px;
+    stroke-dashoffset: -70px;
+    stroke-width: 5px;
+}
+
+.center-line-green {
+    stroke-dasharray: 45px 332px;
+    stroke-dashoffset: 180px;
+    stroke-width: 5px;
+}
+
+/* 377 */
+/* Circles Hover*/
+.red-circles circle {
+    offset-path: path('M 90 60.0385 A 60 60 120 0 0 30 163.9615 A 60 60 120 0 0 90 60.0385');
+}
+
+.blue-circles circle {
+    offset-path: path('M 120 111.9615 A 60 60 240 0 0 60 8.0385 A 60 60 240 0 0 120 111.9615');
+}
+
+.green-circles circle {
+    offset-path: path('M 60 112 A 60 60 0 0 0 180 112 A 60 60 0 0 0 60 112');
+}
+
+
+svg .red-circles circle:first-child,
+svg .blue-circles circle:first-child,
+svg .green-circles circle:first-child {
+    offset-distance: 32px;
+    transition: 1.5s;
+    fill: #58508C;
+}
+
+svg .red-circles circle:nth-child(2),
+svg .blue-circles circle:nth-child(2),
+svg .green-circles circle:nth-child(2) {
+    offset-distance: 62px;
+    transition: 1.5s;
+    fill: #58508C;
+}
+
+svg .red-circles circle:nth-child(3),
+svg .blue-circles circle:nth-child(3),
+svg .green-circles circle:nth-child(3) {
+    offset-distance: 87px;
+    transition: 1.5s;
+    fill: #58508C;
+}
+
+svg .red-circles circle:nth-child(4),
+svg .blue-circles circle:nth-child(4),
+svg .green-circles circle:nth-child(4) {
+    offset-distance: 112px;
+    transition: 1.5s;
+    fill: #58508C;
+}
+
+svg .red-circles circle:nth-child(5),
+svg .blue-circles circle:nth-child(5),
+svg .green-circles circle:nth-child(5) {
+    offset-distance: 132px;
+    transition: 1.5s;
+    fill: #58508C;
+}
+
+/* Circles*/
+.green-circles circle,
+.red-circles circle,
+.blue-circles circle {
+    offset-distance: 0;
+    transition: 1s;
+}
+
+.red circle:nth-child(2),
+.blue circle:nth-child(2),
+.green circle:nth-child(2) {
+    transition: 1s;
+    animation: show 2s 1s forwards;
+}
+
+svg .red circle:nth-child(2),
+svg .blue circle:nth-child(2),
+svg .green circle:nth-child(2) {
+    transform: scale(1);
+    transition: 2s;
+}
+
+/* Big */
+svg .red circle,
+svg .blue circle,
+svg .green circle {
+    transform: scale(1);
+    transition: transform 1s;
+}
