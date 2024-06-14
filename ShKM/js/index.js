@@ -102,9 +102,9 @@ burgerMenu.list.addEventListener('click', burgerAction);
 language.target.addEventListener('click', function () {
     language.target.classList.toggle('open');
     if (language.target.classList.contains('open')) {
-        language.indicator.setAttribute('src', '../img/cross.svg');
+        language.indicator.setAttribute('src', './img/cross.svg');
     } else {
-        language.indicator.setAttribute('src', '../img/rectangle.svg')
+        language.indicator.setAttribute('src', './img/rectangle.svg')
     }
 });
 
