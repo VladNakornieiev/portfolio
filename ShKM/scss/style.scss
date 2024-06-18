@@ -27,6 +27,90 @@ html {
     margin: 0 auto;
 }
 
+.modal-bg {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(217, 217, 217, 70%);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    place-items: center;
+
+    .modal {
+        width: 600px;
+        height: 387px;
+        border-radius: 8px;
+        background-color: #F4F2F5;
+        padding: 50px 70px;
+        position: relative;
+
+        .close-modal {
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            right: 30px;
+            top: 30px;
+        }
+
+        h3 {
+            font-size: 1.44rem;
+            font-weight: 500;
+        }
+
+        form {
+            width: 100%;
+            height: auto;
+            justify-self: flex-end;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+
+            input {
+                width: 100%;
+                height: 55px;
+                padding: 0 15px;
+                background-color: #D9D9D9;
+                border: none;
+                border-radius: 8px;
+                color: $--main-black;
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+        }
+
+        .modal-message {
+            width: 100%;
+            height: 100%;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 30px;
+        }
+    }
+
+    &.sended {
+        form {
+            display: none;
+        }
+
+        .modal-message {
+            display: flex;
+        }
+    }
+
+    &.open {
+        display: grid;
+    }
+}
+
+
+
 /* Nav */
 
 .nav {
@@ -63,6 +147,7 @@ html {
             position: absolute;
             top: 0;
             opacity: 0;
+            z-index: 4;
             background-color: $--main-white;
             display: flex;
             justify-content: space-between;
@@ -114,6 +199,7 @@ html {
 
     .container {
         padding: 83px 0 57px 0;
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -126,8 +212,42 @@ html {
         text-align: center;
     }
 
-    svg {
+    .header-logo {
         margin-top: -25px;
+    }
+
+    [class*="-ico"] {
+        position: absolute;
+    }
+
+    .personage-ico {
+        bottom: 200px;
+        left: 5px;
+    }
+
+    .tg-ico {
+        top: 200px;
+        left: 100px;
+    }
+
+    .mark-ico {
+        top: 270px;
+        left: 190px;
+    }
+
+    .shield-ico {
+        right: 260px;
+        bottom: 230px;
+    }
+
+    .heart-ico {
+        right: 130px;
+        bottom: 250px;
+    }
+
+    .star-ico {
+        right: 200px;
+        top: 230px;
     }
 
     h5 {
@@ -246,11 +366,15 @@ html {
                     align-items: flex-end;
                 }
 
-                &:nth-child(1) div p {
+                &:first-of-type div p {
                     width: fit-content;
                     font-size: 1.2rem;
                     font-weight: 600;
                     margin-bottom: 5px;
+                }
+
+                &:last-of-type {
+                    width: 130px;
                 }
             }
         }
@@ -361,6 +485,10 @@ html {
         color: white;
     }
 
+    .container {
+        position: relative;
+    }
+
     .footer-header {
         width: 100%;
         height: auto;
@@ -427,7 +555,6 @@ html {
                 }
             }
         }
-
     }
 
     .contacts {
@@ -466,6 +593,12 @@ html {
             }
         }
     }
+
+    .footer-ico {
+        position: absolute;
+        right: 0;
+        bottom: -15px;
+    }
 }
 
 // Media
@@ -497,6 +630,19 @@ html {
 
         h1 {
             text-align: center;
+        }
+
+        [class*="-ico"]:not(.personage-ico, .shield-ico) {
+            display: none;
+        }
+
+        .personage-ico {
+            left: 20px;
+            top: 190px;
+        }
+
+        .shield-ico {
+            right: 50px;
         }
     }
 
@@ -566,6 +712,10 @@ html {
                 left: 0;
             }
         }
+
+        .footer-ico {
+            display: none;
+        }
     }
 }
 
@@ -574,10 +724,23 @@ html {
         max-width: 95%;
     }
 
+    .modal-bg {
+        .modal {
+            width: 100%;
+            max-width: 500px;
+            padding: 50px 30px;
+            height: auto;
+        }
+    }
+
     .nav {
         #language {
             order: -1;
             margin: 0 5px;
+        }
+
+        a[href="index.html"] {
+            margin-right: 20px;
         }
 
         .links {
@@ -599,7 +762,8 @@ html {
                 align-items: center;
                 gap: 45px;
                 opacity: 1;
-                background-color: rgb(255 255 255 / 80%);
+                z-index: 2;
+                background-color: rgb(255 255 255);
                 transition: position 1s ease;
 
                 a {
@@ -623,7 +787,7 @@ html {
             font-size: clamp(2.488rem, 12vw, 2.986rem);
         }
 
-        svg {
+        .header-logo {
             margin-top: -100px;
             z-index: -1;
             opacity: 0.3;
@@ -631,6 +795,10 @@ html {
 
         h5 {
             margin-top: -60px;
+        }
+
+        [class*="-ico"] {
+            display: none;
         }
     }
 
@@ -666,6 +834,10 @@ html {
                     display: flex;
                     flex-direction: column;
                     place-items: center;
+                }
+
+                .statistics-el:last-of-type {
+                    width: 100%;
                 }
             }
         }
@@ -727,6 +899,10 @@ html {
             .contact {
                 margin-bottom: 50px;
             }
+        }
+
+        .footer-ico {
+            display: none;
         }
     }
 }

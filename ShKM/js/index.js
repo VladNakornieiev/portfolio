@@ -15,6 +15,12 @@ let language = {
 
 const languageText = {
     UA: {
+        logo: 'ШКМ',
+        modalTitle: 'Потрібна допомога?',
+        modalSubm: 'Запросити допомоги',
+        modalSendedMessage1: 'Дякую',
+        modalSendedMessage2: 'Ваша заявка прийнята',
+        modalSendedMessage3: 'Наш менеджер зв’яжеться з вами найближчим часом.',
         linkNav1: 'Про школу',
         linkNav2: 'Навчальна програма',
         linkNav3: 'Наш колектив',
@@ -45,8 +51,19 @@ const languageText = {
         descCategory2: '<b>6 років</b><br>навчання',
         descCategory3: '<b>4 роки</b><br>навчання',
         descCategory4: 'Індивідуально',
+        footerTitle: 'Допоможемо з вибором',
+        footerSub: 'Напиши нам, якщо маєш питання щодо навчання, Ми передзвонимо і залюбки поговоримо з тобою :)',
+        footerInName: 'Ім’я',
+        footerInTel: 'Номер телефону',
+        footerSubm: 'Замовити дзвінок',
     },
     EN: {
+        logo: 'ShKM',
+        modalTitle: 'Need help?',
+        modalSubm: 'Request help',
+        modalSendedMessage1: 'Thank you',
+        modalSendedMessage2: 'Your request has been received',
+        modalSendedMessage3: 'Our manager will contact you shortly.',
         linkNav1: 'About school',
         linkNav2: 'Curriculum',
         linkNav3: 'Our team',
@@ -77,6 +94,11 @@ const languageText = {
         descCategory2: '<b>6 years</b><br>of study',
         descCategory3: '<b>4 years</b><br>of study',
         descCategory4: 'Individually',
+        footerTitle: 'Let us help you choose',
+        footerSub: 'Write to us if you have questions about learning. We will call you back and be happy to talk with you :)',
+        footerInName: 'Name',
+        footerInTel: 'Phone number',
+        footerSubm: 'Request a call',
     }
 };
 
@@ -85,6 +107,8 @@ function burgerAction() {
     if (window.innerWidth <= 767) {
         burgerMenu.button.classList.toggle('open');
         burgerMenu.list.classList.toggle('open');
+        language.target.classList.remove('open');
+
         if (burgerMenu.list.classList.contains('open')) {
             html.style.overflowY = 'hidden';
         } else {
@@ -98,32 +122,72 @@ burgerMenu.button.addEventListener('click', burgerAction);
 burgerMenu.list.addEventListener('click', burgerAction);
 
 // Language
+let localLanguage = JSON.parse(localStorage.getItem('language')) || 'UA';
+
+changeLanguage(localLanguage);
+if(localLanguage === 'EN') {
+    updateLanguage('EN', './img/flagUK.svg');
+}
 
 language.target.addEventListener('click', function () {
     language.target.classList.toggle('open');
     if (language.target.classList.contains('open')) {
         language.indicator.setAttribute('src', './img/cross.svg');
     } else {
-        language.indicator.setAttribute('src', './img/rectangle.svg')
+        language.indicator.setAttribute('src', './img/rectangle.svg');
     }
+
 });
 
 language.options.forEach(el => el.addEventListener('click', function (e) {
     if (!language.target.classList.contains('open')) return;
 
     let data = e.currentTarget.dataset.languageOption.split(',');
-    language.label.textContent = data[0];
-    language.img.setAttribute('src', `${data[1]}`);
-    changeLanguage(language.label.textContent);
+    updateLanguage(data[0], data[1]);
 }));
+
+function updateLanguage(text, img) {
+    language.label.textContent = text;
+    language.img.setAttribute('src', `${img}`);
+
+    localLanguage = language.label.textContent;
+    updateLocalStorage();
+
+    changeLanguage(language.label.textContent);
+}
 
 function changeLanguage(userLanguage) {
     language.textEl.forEach(el => {
         let key = el.dataset.languageText;
 
-        el.innerHTML = languageText[userLanguage][key];
+        if (el.tagName == 'INPUT') {
+            el.placeholder = languageText[userLanguage][key];
+        } else {
+            el.innerHTML = languageText[userLanguage][key];
+        }
     });
 }
+
+function updateLocalStorage() {
+    localStorage.setItem('language', JSON.stringify(localLanguage));
+}
+
+// Modal
+let modal = document.querySelector('.modal-bg');
+let closeModal = document.querySelector('.modal-bg .close-modal')
+
+function toggleModal() {
+    modal.classList.toggle('open');
+    if (modal.classList.contains('open')) {
+        html.style.overflowY = 'hidden';
+    } else {
+        html.style.overflowY = 'visible';
+    }
+}
+
+setTimeout(toggleModal, 10000);
+
+closeModal.addEventListener('click', toggleModal);
 
 // Categories 
 
@@ -142,7 +206,7 @@ categories.forEach(el => el.addEventListener('click', function (e) {
 
 document.addEventListener('DOMContentLoaded', () => {
     const elements = document.querySelectorAll('.statistics-el h2[data-stat-max]');
-    
+
     const observerOptions = {
         root: null, // Use the viewport as the root
         rootMargin: '0px',
@@ -186,3 +250,4 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 });
+

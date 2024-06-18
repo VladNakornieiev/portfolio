@@ -21,6 +21,77 @@ html {
   margin: 0 auto;
 }
 
+.modal-bg {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(217, 217, 217, 0.7);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  place-items: center;
+}
+.modal-bg .modal {
+  width: 600px;
+  height: 387px;
+  border-radius: 8px;
+  background-color: #F4F2F5;
+  padding: 50px 70px;
+  position: relative;
+}
+.modal-bg .modal .close-modal {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.modal-bg .modal h3 {
+  font-size: 1.44rem;
+  font-weight: 500;
+}
+.modal-bg .modal form {
+  width: 100%;
+  height: auto;
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.modal-bg .modal form input {
+  width: 100%;
+  height: 55px;
+  padding: 0 15px;
+  background-color: #D9D9D9;
+  border: none;
+  border-radius: 8px;
+  color: #131515;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.modal-bg .modal .modal-message {
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+.modal-bg.sended form {
+  display: none;
+}
+.modal-bg.sended .modal-message {
+  display: flex;
+}
+.modal-bg.open {
+  display: grid;
+}
+
 /* Nav */
 .nav {
   width: 100%;
@@ -52,6 +123,7 @@ html {
   position: absolute;
   top: 0;
   opacity: 0;
+  z-index: 4;
   background-color: #F8F6F8;
   display: flex;
   justify-content: space-between;
@@ -89,6 +161,7 @@ html {
   margin: 10px 10px;
   position: relative;
   cursor: pointer;
+  z-index: 3;
 }
 .nav .burger span {
   background-color: #131515;
@@ -131,6 +204,7 @@ html {
 }
 .header .container {
   padding: 83px 0 57px 0;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -141,8 +215,35 @@ html {
   font-weight: 600;
   text-align: center;
 }
-.header svg {
+.header .header-logo {
   margin-top: -25px;
+}
+.header [class*=-ico] {
+  position: absolute;
+}
+.header .personage-ico {
+  bottom: 200px;
+  left: 5px;
+}
+.header .tg-ico {
+  top: 200px;
+  left: 100px;
+}
+.header .mark-ico {
+  top: 270px;
+  left: 190px;
+}
+.header .shield-ico {
+  right: 260px;
+  bottom: 230px;
+}
+.header .heart-ico {
+  right: 130px;
+  bottom: 250px;
+}
+.header .star-ico {
+  right: 200px;
+  top: 230px;
 }
 .header h5 {
   margin-top: 26px;
@@ -250,12 +351,15 @@ html {
   display: flex;
   align-items: flex-end;
 }
-.main .statistics .statistics-elements .statistics-el:nth-child(1) div p {
+.main .statistics .statistics-elements .statistics-el:first-of-type div p {
   width: -moz-fit-content;
   width: fit-content;
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 5px;
+}
+.main .statistics .statistics-elements .statistics-el:last-of-type {
+  width: 130px;
 }
 .main .school-program {
   padding: 50px 0;
@@ -348,6 +452,9 @@ html {
 .footer h5,
 .footer a {
   color: white;
+}
+.footer .container {
+  position: relative;
 }
 .footer .footer-header {
   width: 100%;
@@ -442,6 +549,11 @@ html {
   align-items: center;
   gap: 10px;
 }
+.footer .footer-ico {
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+}
 
 @media screen and (min-width: 767px) and (max-width: 1023px) {
   .container {
@@ -462,6 +574,16 @@ html {
   }
   .header h1 {
     text-align: center;
+  }
+  .header [class*=-ico]:not(.personage-ico, .shield-ico) {
+    display: none;
+  }
+  .header .personage-ico {
+    left: 20px;
+    top: 190px;
+  }
+  .header .shield-ico {
+    right: 50px;
   }
   .main .description {
     width: 100%;
@@ -511,14 +633,26 @@ html {
   .footer .contacts .footer-logo {
     left: 0;
   }
+  .footer .footer-ico {
+    display: none;
+  }
 }
 @media screen and (max-width: 767px) {
   .container {
     max-width: 95%;
   }
+  .modal-bg .modal {
+    width: 100%;
+    max-width: 500px;
+    padding: 50px 30px;
+    height: auto;
+  }
   .nav #language {
     order: -1;
     margin: 0 5px;
+  }
+  .nav a[href="index.html"] {
+    margin-right: 20px;
   }
   .nav .links {
     position: absolute;
@@ -539,7 +673,8 @@ html {
     align-items: center;
     gap: 45px;
     opacity: 1;
-    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
     transition: position 1s ease;
   }
   .nav .links.open a {
@@ -555,13 +690,16 @@ html {
   .header h1 {
     font-size: clamp(2.488rem, 12vw, 2.986rem);
   }
-  .header svg {
+  .header .header-logo {
     margin-top: -100px;
     z-index: -1;
     opacity: 0.3;
   }
   .header h5 {
     margin-top: -60px;
+  }
+  .header [class*=-ico] {
+    display: none;
   }
   .main .galery {
     display: flex;
@@ -588,6 +726,9 @@ html {
     display: flex;
     flex-direction: column;
     place-items: center;
+  }
+  .main .statistics .statistics-elements .statistics-el:last-of-type {
+    width: 100%;
   }
   .main .school-program h2 {
     margin-bottom: 60px;
@@ -630,5 +771,8 @@ html {
   }
   .footer .contacts .contact {
     margin-bottom: 50px;
+  }
+  .footer .footer-ico {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
