@@ -1,0 +1,33 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - main  # Або назва вашої основної гілки
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'  # Встановіть відповідну версію Python
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Deploy to server
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}  # Приватний ключ для SSH доступу до сервера
+        SERVER_USER: ${{ secrets.SERVER_USER }}  # Ім'я користувача на сервері
+        SERVER_IP: ${{ secrets.SERVER_IP }}  # IP або доменне ім'я сервера
+      run: |
+        ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "cd /path/to/your/app && git pull origin main && systemctl restart your_flask_app.service"
+
