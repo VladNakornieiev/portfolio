@@ -440,6 +440,7 @@ html {
 }
 .main .school-program .categories .categories-desc p {
   width: 100%;
+  cursor: pointer;
 }
 .main .school-program .program-desk {
   width: 100%;
@@ -968,6 +969,7 @@ html {
   }
   .main .school-program .program-desk {
     margin-top: 70px;
+    justify-content: center;
   }
   .main .school-program .program-desk div {
     flex-direction: column-reverse;
@@ -1001,6 +1003,7 @@ html {
   .main .our-team .our-team-selector .our-team-groups p {
     padding: 15px 0;
     border-radius: 31px;
+    cursor: pointer;
   }
   .main .our-team .our-team-selector .our-team-groups .our-team-active {
     background-color: #0071E3;
