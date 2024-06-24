@@ -24,9 +24,11 @@
             </svg>
             <form action="/help" method="post" id="helpForm">
                 <h3 data-language-text="modalTitle">Потрібна допомога?</h3>
-                <input type="text" name="name" placeholder="Ім’я" autocomplete="off" data-language-text="footerInName">
+                <input type="text" name="name" placeholder="Ім’я" autocomplete="off" data-language-text="footerInName"
+                    pattern="[A-Za-zА-Яа-яЁёЇїІіЄєҐґ\s]+" required title="Name must contain only letters and spaces.">
                 <input type="tel" name="tel" placeholder="Номер телефону" autocomplete="off"
-                    data-language-text="footerInTel">
+                    data-language-text="footerInTel" pattern="\(\d{3}\) \d{3}-\d{4}" required
+                    title="Phone number must be in the format (123) 456-7890.">
                 <button class="inscribe" type="submit" data-language-text="modalSubm">Запросити допомоги</button>
             </form>
             <div class="modal-message">
@@ -119,9 +121,9 @@
             <div class="links">
                 <a href="#about-school" data-language-text="linkNav1">Про школу</a>
                 <a href="#school-program" data-language-text="linkNav2">Навчальна програма</a>
-                <a href="#" data-language-text="linkNav3">Наш колектив</a>
-                <a href="#galery" data-language-text="linkNav4">Галерея</a>
-                <a href="#" data-language-text="linkNav5">Відгуки</a>
+                <a href="#our-team" data-language-text="linkNav3">Наш колектив</a>
+                <a href="#school-gallery" data-language-text="linkNav4">Галерея</a>
+                <a href="#reviews" data-language-text="linkNav5">Відгуки</a>
                 <a href="#footer" data-language-text="linkNav6">Контакти</a>
             </div>
             <div id="language">
@@ -316,19 +318,19 @@
     <main class="main">
         <div class="description">
             <div class="container">
-                <section class="galery" id="galery">
-                    <div class="galery-img" style="background-image: url(./img/photo1.png);">
-                        <p data-language-text="galery1">
+                <section class="gallery">
+                    <div class="gallery-img" style="background-image: url(./img/photo1.png);">
+                        <p data-language-text="gallery1">
                             Поле наших знань лежить в сфері сайтобудування, а саме FRONT-END розробки, яка на даний
                             момент розвивається найшвидше. </p>
                     </div>
-                    <div class="galery-img" style="background-image: url(./img/photo2.png);">
-                        <p style="max-width: 491px;" data-language-text="galery2">Це гарантовано дає можливість нашим
+                    <div class="gallery-img" style="background-image: url(./img/photo2.png);">
+                        <p style="max-width: 491px;" data-language-text="gallery2">Це гарантовано дає можливість нашим
                             учням отримати престижну та
                             високооплачувану професію.</p>
                     </div>
-                    <div class="galery-img" style="background-image: url(./img/photo3.png);">
-                        <p style="max-width: 368px; align-self: flex-end;" data-language-text="galery3">Працюють тільки
+                    <div class="gallery-img" style="background-image: url(./img/photo3.png);">
+                        <p style="max-width: 368px; align-self: flex-end;" data-language-text="gallery3">Працюють тільки
                             професійні викладачі, які
                             мають вищу педагогічну освіту. </p>
                     </div>
@@ -391,6 +393,41 @@
                         <p data-language-text="descCategory4">Індивідуально</p>
                     </div>
                 </div>
+                <div class="program-desk"></div>
+            </div>
+            <div class="our-team" id="our-team">
+                <div class="our-team-selector">
+                    <h2 data-language-text="ourTeam">Наш колектив</h2>
+                    <div class="our-team-groups">
+                        <div class="our-team-bg"></div>
+                        <p data-our-team-i="0" data-team-member-dep="IF" class="our-team-active" data-language-text="ourTeamSelector1">Івано-Франківськ</p>
+                        <p data-our-team-i="1" data-team-member-dep="KryR" data-language-text="ourTeamSelector2">Кривий Ріг</p>
+                        <p data-our-team-i="2" data-team-member-dep="Zap" data-language-text="ourTeamSelector3">Запоріжжя</p>
+                    </div>
+                </div>
+                <div class="team-gallery">
+                    <div class="team-header">
+                        <img src="./img/OlesyaPetrivna.jpg" alt="teacher-img">
+                        <div class="team-desk">
+                            <h3>Гут Олеся Петрівна</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, molestias! Hic
+                                repellendus
+                                facilis ut fugit? Recusandae sit neque officia unde ea quia ipsam?</p>
+                        </div>
+                    </div>
+                    <div class="team-members">
+
+                    </div>
+                </div>
+            </div>
+            <div class="reviews" id="reviews">
+                <h2 data-language-text="reviewTitle">Відгуки про школу</h2>
+                <div class="reviews-box"></div>
+            </div>
+            <div class="school-gallery" id="school-gallery">
+                <h2 data-language-text="schoolGalleryTitle">Галерея школи</h2>
+                <img src="./img/school-gallery/gallery-photo1.jpg" alt="school-gallery-photo">
+                <div class="school-gallery-photos"></div>
             </div>
         </div>
     </main>
@@ -402,9 +439,11 @@
                     залюбки поговоримо з тобою :)</h4>
                 <form action="/orderCall" method="post" id="orderCallForm">
                     <input type="text" name="name" placeholder="Ім’я" autocomplete="off"
-                        data-language-text="footerInName">
+                        data-language-text="footerInName" pattern="[A-Za-zА-Яа-яЁёЇїІіЄєҐґ\s]+" required
+                        title="Name must contain only letters and spaces.">
                     <input type="tel" name="tel" placeholder="Номер телефону" autocomplete="off"
-                        data-language-text="footerInTel">
+                        data-language-text="footerInTel" pattern="\(\d{3}\) \d{3}-\d{4}" required
+                        title="Phone number must be in the format (123) 456-7890.">
                     <button type="submit" data-language-text="footerSubm">Замовити дзвінок</button>
                 </form>
             </div>
@@ -581,6 +620,32 @@
             </svg>
         </div>
     </footer>
+    <template id="member">
+        <div>
+            <p></p>
+        </div>
+    </template>
+    <template id="school-program-template">
+        <div>
+            <img src="" alt="img">
+            <section></section>
+        </div>
+    </template>
+    <template id="review-template">
+        <div class="review">
+            <div class="review-header">
+                <div class="review-header-box">
+                    <img src="" alt="userImg">
+                    <div>
+                        <h4></h4>
+                        <h5></h5>
+                    </div>
+                </div>
+                <div class="rating"></div>
+            </div>
+            <p class="review-text"></p>
+        </div>
+    </template>
     <script src="./js/index.js"></script>
     <script src="./js/form.js"></script>
 </body>

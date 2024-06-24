@@ -271,7 +271,7 @@ html {
   transition: background-color 0.2s;
 }
 
-.main .galery {
+.main .gallery {
   height: 548px;
   width: 100%;
   display: grid;
@@ -281,7 +281,7 @@ html {
        column-gap: 20px;
   row-gap: 15px;
 }
-.main .galery .galery-img {
+.main .gallery .gallery-img {
   width: 100%;
   height: 100%;
   position: relative;
@@ -293,7 +293,7 @@ html {
   justify-content: flex-end;
   padding: 25px;
 }
-.main .galery .galery-img p {
+.main .gallery .gallery-img p {
   max-width: 586px;
   height: -moz-max-content;
   height: max-content;
@@ -301,7 +301,7 @@ html {
   background-color: #F8F6F8;
   font-weight: 500;
 }
-.main .galery .galery-img:first-child {
+.main .gallery .gallery-img:first-child {
   grid-row: 1/3;
 }
 .main .quote {
@@ -440,6 +440,213 @@ html {
 }
 .main .school-program .categories .categories-desc p {
   width: 100%;
+}
+.main .school-program .program-desk {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main .school-program .program-desk div {
+  width: 590px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.main .school-program .program-desk div h3,
+.main .school-program .program-desk div p {
+  text-align: start;
+}
+.main .school-program .program-desk div h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.main .school-program .program-desk div p {
+  font-size: 1rem;
+}
+.main .our-team .our-team-selector {
+  max-width: 670px;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 17px;
+}
+.main .our-team .our-team-selector h2 {
+  font-size: 2.986rem;
+  font-weight: 600;
+}
+.main .our-team .our-team-selector .our-team-groups {
+  width: 100%;
+  height: 70px;
+  border-radius: 32px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  position: relative;
+  background-color: #E6E6E6;
+}
+.main .our-team .our-team-selector .our-team-groups .our-team-bg {
+  width: 20%;
+  height: 53px;
+  border-radius: 31px;
+  background-color: #0071E3;
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  transition: all 0.5s;
+}
+.main .our-team .our-team-selector .our-team-groups p {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+  transition: all 0.5s;
+}
+.main .our-team .our-team-selector .our-team-groups .our-team-active {
+  color: white;
+  transition: all 0.5s;
+}
+.main .our-team .team-gallery {
+  max-width: 1152px;
+  height: auto;
+  margin: 40px auto 100px auto;
+}
+.main .our-team .team-gallery .team-header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 90px;
+}
+.main .our-team .team-gallery .team-header img {
+  width: 482px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 20%;
+     object-position: 50% 20%;
+  border-radius: 32px;
+}
+.main .our-team .team-gallery .team-header .team-desk {
+  max-width: 360px;
+  margin-top: 60px;
+}
+.main .our-team .team-gallery .team-header .team-desk h3 {
+  font-size: 2.074rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.main .our-team .team-gallery .team-members {
+  width: 100%;
+  height: 360px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 36px;
+  margin-top: 24px;
+}
+.main .our-team .team-gallery .team-members div {
+  min-width: 261px;
+  height: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 11px;
+  border-radius: 16px;
+}
+.main .our-team .team-gallery .team-members div p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 12px;
+  background-color: rgba(248, 246, 248, 0.6);
+}
+.main .our-team .team-gallery .team-members div.active {
+  display: none;
+}
+.main .reviews {
+  width: 100%;
+  height: auto;
+}
+.main .reviews h2 {
+  font-size: 2.074rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.main .reviews .reviews-box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 15px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.main .reviews .reviews-box .review {
+  min-width: 300px;
+  padding: 30px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.main .reviews .reviews-box .review .review-header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.main .reviews .reviews-box .review .review-header .review-header-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.main .reviews .reviews-box .review .review-header .review-header-box img {
+  width: 40px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+}
+.main .reviews .reviews-box .review p {
+  width: 100%;
+  text-wrap: wrap;
+}
+.main .school-gallery h2 {
+  font-size: 2.074rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 35px;
+}
+.main .school-gallery img {
+  width: 100%;
+}
+.main .school-gallery .school-gallery-photos {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0 50px 0;
+  overflow-x: scroll;
+}
+.main .school-gallery .school-gallery-photos img {
+  min-width: 216px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .footer {
@@ -590,18 +797,18 @@ html {
     display: flex;
     flex-direction: column;
   }
-  .main .description .galery {
+  .main .description .gallery {
     display: flex;
     flex-direction: column;
     gap: 26px;
   }
-  .main .description .galery .galery-img:first-child {
+  .main .description .gallery .gallery-img:first-child {
     display: none;
   }
-  .main .description .galery .galery-img:nth-child(2) p {
+  .main .description .gallery .gallery-img:nth-child(2) p {
     align-self: flex-end;
   }
-  .main .description .galery .galery-img:nth-child(3) p {
+  .main .description .gallery .gallery-img:nth-child(3) p {
     align-self: flex-start !important;
   }
   .main .description .quote {
@@ -619,6 +826,10 @@ html {
   }
   .main .school-program p[data-language-text=schoolProgramDesc] {
     display: none;
+  }
+  .main .school-program .program-desk {
+    flex-direction: column;
+    align-items: center;
   }
   .footer .footer-header {
     width: 575px;
@@ -701,15 +912,15 @@ html {
   .header [class*=-ico] {
     display: none;
   }
-  .main .galery {
+  .main .gallery {
     display: flex;
     flex-direction: column;
     gap: 26px;
   }
-  .main .galery .galery-img:nth-child(2) {
+  .main .gallery .gallery-img:nth-child(2) {
     display: none;
   }
-  .main .galery .galery-img:nth-child(3) {
+  .main .gallery .gallery-img:nth-child(3) {
     display: none;
   }
   .main .quote {
@@ -733,10 +944,11 @@ html {
   .main .school-program h2 {
     margin-bottom: 60px;
   }
-  .main .school-program p {
+  .main .school-program p[data-language-text=schoolProgramDesc],
+  .main .school-program .categories .categories-desc {
     display: none;
   }
-  .main .school-program h3 {
+  .main .school-program h2 {
     margin-bottom: 60px;
   }
   .main .school-program .categories .categories-age {
@@ -753,6 +965,58 @@ html {
   }
   .main .school-program .categories .categories-age .category-active {
     background-color: #0071E3;
+  }
+  .main .school-program .program-desk {
+    margin-top: 70px;
+  }
+  .main .school-program .program-desk div {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+  .main .school-program .program-desk div section {
+    width: 100%;
+    padding: 20px 25px;
+    background-color: rgba(217, 217, 217, 0.4);
+    border-radius: 10px;
+  }
+  .main .school-program .program-desk div img {
+    margin-top: -40px;
+    z-index: -1;
+  }
+  .main .our-team .our-team-selector {
+    width: 100%;
+    max-width: 100%;
+  }
+  .main .our-team .our-team-selector h2 {
+    text-align: center;
+  }
+  .main .our-team .our-team-selector .our-team-groups {
+    height: auto;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .main .our-team .our-team-selector .our-team-groups .our-team-bg {
+    display: none;
+  }
+  .main .our-team .our-team-selector .our-team-groups p {
+    padding: 15px 0;
+    border-radius: 31px;
+  }
+  .main .our-team .our-team-selector .our-team-groups .our-team-active {
+    background-color: #0071E3;
+  }
+  .main .our-team .team-gallery .team-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .main .our-team .team-gallery .team-header img {
+    width: 100%;
+  }
+  .main .our-team .team-gallery .team-header .team-desk {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+    text-align: center;
   }
   .footer .footer-header {
     max-width: 575px;
